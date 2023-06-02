@@ -1,0 +1,3 @@
+/home/eduarddumitrescul/repos/poo-examen2023/cmake-build-debug/CMakeFiles/poo_examen2023.dir
+/home/eduarddumitrescul/repos/poo-examen2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/eduarddumitrescul/repos/poo-examen2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir

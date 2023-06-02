@@ -1,0 +1,19 @@
+# ninja log v5
+1	482	1681799538345892231	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	5190d43cd823023f
+645	754	1681799538615897317	sd_binomial_heap	7bb6cd0e9b014a4c
+1	645	1681799538507895283	CMakeFiles/sd_binomial_heap.dir/BinomialHeap.cpp.o	b76f05e7396e87d9
+0	307	1682571183368560346	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	993a64fd776c44ec
+0	348	1682571200420649430	CMakeFiles/sd_binomial_heap.dir/BinomialHeap.cpp.o	eb86a8a9a10d1c85
+348	394	1682571200464649660	sd_binomial_heap	7bb6cd0e9b014a4c
+1	549	1683020126276061608	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	993a64fd776c44ec
+0	13	1683020174071123781	CMakeFiles/sd_binomial_heap.dir/BinomialHeap.cpp.o	eb86a8a9a10d1c85
+13	72	1683020174127125829	sd_binomial_heap	7bb6cd0e9b014a4c
+2	498	1683113585569174255	CMakeFiles/sd_binomial_heap.dir/BinomialHeap.cpp.o	eb86a8a9a10d1c85
+1	511	1683113585583174538	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	993a64fd776c44ec
+511	571	1683113585641175710	sd_binomial_heap	7bb6cd0e9b014a4c
+0	2641	1685055865450201130	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	993a64fd776c44ec
+2642	2784	1685055865593203401	sd_binomial_heap	7bb6cd0e9b014a4c
+0	1627	1685055916708015380	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	993a64fd776c44ec
+1628	1832	1685055916914018652	sd_binomial_heap	7bb6cd0e9b014a4c
+1	1267	1685687036897378797	CMakeFiles/sd_binomial_heap.dir/main.cpp.o	993a64fd776c44ec
+1268	1313	1685687036941379593	sd_binomial_heap	7bb6cd0e9b014a4c

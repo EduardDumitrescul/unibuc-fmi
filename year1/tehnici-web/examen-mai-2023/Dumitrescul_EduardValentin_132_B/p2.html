@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+        <script>
+            function init() {
+                var colors = ["red", "blue", "green", "orange", "pink"];
+                window.onkeypress = function(event) {
+                   // console.log(event.key);
+                    if("0" <= event.key && event.key <= "9") {
+                        let div = document.createElement("div");
+                        div.style.width = "50px";
+                        div.style.height = "50px";
+                        div.style.display = "inline-block";
+                        div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                        div.innerHTML = event.key;
+                        document.body.appendChild(div);
+
+                        div.addEventListener("click", eventListener, event);
+                    }
+                }
+
+                document.addEventListener("click", function() {
+                    let arr = document.querySelectorAll(".click");
+                    for(let div of arr) {
+                        document.body.removeChild(div);
+                    }
+                });
+            }
+
+            function eventListener(event) {
+                let arr = document.querySelectorAll("div");
+                for(let i = 0; i < arr.length; i ++) {
+                    if(this.innerHTML == arr[i].innerHTML) {
+                        arr[i].style.border = "2px double green";
+                        arr[i].classList.add("click");
+                    }
+                }
+
+                event.stopPropagation();
+            }
+
+            window.onload = init;
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

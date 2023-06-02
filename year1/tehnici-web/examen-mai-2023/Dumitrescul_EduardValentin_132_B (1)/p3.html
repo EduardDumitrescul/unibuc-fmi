@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function init() {
+                var ul = document.querySelector("ul");
+                for(let i = 0; i < 10; i ++) {
+                    let arr = ul.querySelectorAll("li");
+                    if(localStorage.getItem(i) != null) {
+                        arr[i].innerHTML = localStorage.getItem(i);
+                    }
+                }
+
+                let rep = setInterval(function() {
+                    let li = ul.querySelector("li:nth-child(1)");
+                    ul.removeChild(li);
+                    ul.appendChild(li);
+                }, 3000);
+
+
+                let checkbox = document.querySelector("input");
+                checkbox.onclick = function() {
+                    clearInterval(rep);
+                    let ul = document.querySelector("ul");
+                    let arr = ul.querySelectorAll("li");
+                    for(let i = 0; i < arr.length; i ++) {
+                        localStorage.setItem(i, arr[i].innerHTML);
+                    }
+                }
+            }
+
+            window.onload = init;
+
+        </script>
+    </head>
+    <body>
+        <input type="checkbox" name="checkbox">
+        <label for="checkbox">stop</label>
+        <ul>
+            <li>element1</li>
+            <li>element2</li>
+            <li>element3</li>
+            <li>element4</li>
+            <li>element5</li>
+            <li>element6</li>
+            <li>element7</li>
+            <li>element8</li>
+            <li>element9</li>
+            <li>element10</li>
+        </ul>
+    </body>
+</html>
