@@ -1,0 +1,24 @@
+/*
+	PUNCTUL 15
+*/
+
+/*
+1. Outer Join
+Sa se afiseze pentru fiecare jucator numele echipei, al antrenorului si toate premiile castigate.
+*/
+
+select e.nume echipa, a.nume || ' ' || a.prenume "Nume antrenor", j.nume || ' ' || j.prenume "Nume jucator",(select denumire from premii where d.id_premiu = id_premiu)
+from jucatori j
+full outer join distinctii d on d.id_jucator = j.id_jucator
+full outer join echipe e on e.id_echipa = j.id_echipa
+join angajati a on a.id_angajat = e.id_antrenor
+order by 1;
+            
+/*      
+2. Top-n
+Folosind vizualizarea STATISTICI_JUCATRORI, sa se afiseze cei 5 jucatori cu cele mai multe puncte marcate, precum si statisticile acestora.
+*/
+
+select * from statistici_jucatori
+where rownum <= 5
+order by puncte desc;

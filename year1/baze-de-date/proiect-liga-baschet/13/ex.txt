@@ -1,0 +1,29 @@
+/*
+	PUNCTUL 13
+*/
+
+/*
+1. Sa se actualizeze salariu jucatorului Hernandez Sebastian cu valoarea medie a salariilor tuturor jucatorilor.
+*/
+
+update jucatori j
+set j.salariu = (select avg(j2.salariu) from jucatori j2)
+where lower(j.nume) = 'hernandez'
+and lower(j.prenume) = 'sebastian';
+
+/*
+2. Sa se stearga comentariile din meciurile in care echipa oaspete a castigat
+*/
+
+delete 
+from comentarii c
+where exists (select '*' from meciuri m
+where c.id_meci = m.id_meci and m.scor_oaspete > m.scor_gazda);
+
+/*
+3. Sa se actualizeze data obtinerii licentei a arbitrilor care si-au obtinut licenta inainte de 1980 cu valoare datei curente.
+*/
+
+update arbitrii a
+set a.data_obtinere_licenta = (select sysdate from dual) 
+where extract(year from a.data_obtinere_licenta) < 1980;

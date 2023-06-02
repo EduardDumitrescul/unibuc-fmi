@@ -1,0 +1,5 @@
+create sequence idseq
+start with 1000
+increment by 1
+nocycle
+nocache;

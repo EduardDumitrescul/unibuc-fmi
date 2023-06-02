@@ -1,0 +1,16 @@
+insert into locatii values(idseq.nextval, 'USA', 'New York City', 'Fifth Avenue', '742');
+insert into locatii values(idseq.nextval, 'USA', 'Los Angeles', 'Hollywood Boulevard', '6801');
+insert into locatii values(idseq.nextval, 'USA', 'Las Vegas', 'Las Vegas Boulevard', '3570');
+insert into locatii values(idseq.nextval, 'USA', 'Chicago', 'Michigan Avenue', '875');
+insert into locatii values(idseq.nextval, 'USA', 'San Francisco', 'Lombard Street', '1099');
+insert into locatii values(idseq.nextval, 'USA', 'Miami', 'Ocean Drive', '100');
+insert into locatii values(idseq.nextval, 'USA', 'Orlando', 'International Drive', '8000');
+insert into locatii values(idseq.nextval, 'USA', 'Houston', 'NASA Road 1', '1601');
+insert into locatii values(idseq.nextval, 'USA', 'Seattle', 'Pike Place Market', '85');
+insert into locatii values(idseq.nextval, 'USA', 'Washington D.C.', '1600 Pennsylvania Avenue NW', '1600');
+insert into locatii values(idseq.nextval, 'USA', 'Boston', 'Fenway Park', '4');
+insert into locatii values(idseq.nextval, 'USA', 'Atlanta', 'Peachtree Street', '303');
+insert into locatii values(idseq.nextval, 'USA', 'Dallas', 'Dealey Plaza', '411');
+insert into locatii values(idseq.nextval, 'USA', 'Denver', '16th Street Mall', '1001');
+insert into locatii values(idseq.nextval, 'USA', 'New Orleans', 'Bourbon Street', '500');
+insert into locatii values(idseq.nextval, 'USA', 'San Diego', 'Balboa Park', '1549');

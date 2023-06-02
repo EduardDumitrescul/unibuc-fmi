@@ -1,0 +1,16 @@
+insert into arene values(idseq.nextval, 1083, 'The Thunderdome', 29000);
+insert into arene values(idseq.nextval, 1084, 'The Coliseum', 30000);
+insert into arene values(idseq.nextval, 1085, 'The Pit', 30000);
+insert into arene values(idseq.nextval, 1086, 'The Garden', 33000);
+insert into arene values(idseq.nextval, 1087, 'The Staples Center', 33000);
+insert into arene values(idseq.nextval, 1088, 'The Oracle', 33000);
+insert into arene values(idseq.nextval, 1089, 'The Hoop House', 38000);
+insert into arene values(idseq.nextval, 1090, 'The Den', 39000);
+insert into arene values(idseq.nextval, 1091, 'The Arena', 36000);
+insert into arene values(idseq.nextval, 1092, 'The Thunderdome', 21000);
+insert into arene values(idseq.nextval, 1093, 'The Dome', 27000);
+insert into arene values(idseq.nextval, 1094, 'The Palace', 40000);
+insert into arene values(idseq.nextval, 1095, 'The Madhouse', 40000);
+insert into arene values(idseq.nextval, 1096, 'The Pavilion', 39000);
+insert into arene values(idseq.nextval, 1097, 'The Buzzer Beater', 38000);
+insert into arene values(idseq.nextval, 1098, 'The Swish Center', 38000);

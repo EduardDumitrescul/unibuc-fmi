@@ -1,0 +1,5 @@
+insert into comentatori values(idseq.nextval, 'Wilson', 'Gabriel');
+insert into comentatori values(idseq.nextval, 'Gonzalez', 'Caleb');
+insert into comentatori values(idseq.nextval, 'Lee', 'Harrison');
+insert into comentatori values(idseq.nextval, 'Lopez', 'Silas');
+insert into comentatori values(idseq.nextval, 'Taylor', 'Jasper');

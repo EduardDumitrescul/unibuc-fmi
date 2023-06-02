@@ -1,0 +1,16 @@
+insert into participari values(1000, 1115);
+insert into participari values(1000, 1116);
+insert into participari values(1000, 1117);
+insert into participari values(1000, 1118);
+insert into participari values(1000, 1119);
+insert into participari values(1000, 1120);
+insert into participari values(1000, 1121);
+insert into participari values(1000, 1122);
+insert into participari values(1000, 1123);
+insert into participari values(1000, 1124);
+insert into participari values(1000, 1125);
+insert into participari values(1000, 1126);
+insert into participari values(1000, 1127);
+insert into participari values(1000, 1128);
+insert into participari values(1000, 1129);
+insert into participari values(1000, 1130);

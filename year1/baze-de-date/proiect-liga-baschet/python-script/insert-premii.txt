@@ -1,0 +1,5 @@
+insert into premii values(idseq.nextval, 'Most Valuable Player (MVP)');
+insert into premii values(idseq.nextval, 'Rookie of the Year');
+insert into premii values(idseq.nextval, 'Defensive Player of the Year');
+insert into premii values(idseq.nextval, 'Sixth Man of the Year');
+insert into premii values(idseq.nextval, 'Most Improved Player');

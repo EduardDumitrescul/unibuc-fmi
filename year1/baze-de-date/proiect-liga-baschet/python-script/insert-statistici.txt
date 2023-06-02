@@ -1,0 +1,10 @@
+insert into statistici values(idseq.nextval, 1216, 1131, 43, 21, 1, 16, 7, 10, 9, 22, 10, 4);
+insert into statistici values(idseq.nextval, 1216, 1132, 37, 13, 1, 20, 0, 0, 0, 14, 8, 0);
+insert into statistici values(idseq.nextval, 1216, 1133, 25, 11, 3, 20, 3, 4, 0, 22, 2, 3);
+insert into statistici values(idseq.nextval, 1216, 1134, 27, 7, 5, 18, 3, 10, 4, 4, 7, 5);
+insert into statistici values(idseq.nextval, 1216, 1135, 31, 8, 0, 10, 9, 4, 3, 19, 9, 3);
+insert into statistici values(idseq.nextval, 1216, 1206, 30, 17, 14, 2, 2, 8, 2, 12, 6, 2);
+insert into statistici values(idseq.nextval, 1216, 1207, 34, 6, 4, 14, 11, 8, 2, 14, 0, 3);
+insert into statistici values(idseq.nextval, 1216, 1208, 36, 10, 9, 4, 3, 16, 4, 23, 2, 2);
+insert into statistici values(idseq.nextval, 1216, 1209, 33, 13, 2, 13, 11, 1, 1, 25, 4, 2);
+insert into statistici values(idseq.nextval, 1216, 1210, 30, 7, 0, 8, 1, 12, 1, 2, 9, 1);

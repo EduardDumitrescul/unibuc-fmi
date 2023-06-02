@@ -1,0 +1,16 @@
+insert into echipe values(idseq.nextval, 1099, 1035, 1051,1067, 'Lightning Bolts', 1994);
+insert into echipe values(idseq.nextval, 1100, 1036, 1052,1068, 'Thunderbirds', 1983);
+insert into echipe values(idseq.nextval, 1101, 1037, 1053,1069, 'Wildcats', 2010);
+insert into echipe values(idseq.nextval, 1102, 1038, 1054,1070, 'Heatwave', 1999);
+insert into echipe values(idseq.nextval, 1103, 1039, 1055,1071, 'Hurricanes', 1999);
+insert into echipe values(idseq.nextval, 1104, 1040, 1056,1072, 'Jaguars', 1991);
+insert into echipe values(idseq.nextval, 1105, 1041, 1057,1073, 'Patriots', 2003);
+insert into echipe values(idseq.nextval, 1106, 1042, 1058,1074, 'Titans', 1998);
+insert into echipe values(idseq.nextval, 1107, 1043, 1059,1075, 'Vikings', 1984);
+insert into echipe values(idseq.nextval, 1108, 1044, 1060,1076, 'Dragons', 1975);
+insert into echipe values(idseq.nextval, 1109, 1045, 1061,1077, 'Raptors', 1999);
+insert into echipe values(idseq.nextval, 1110, 1046, 1062,1078, 'Warriors', 1976);
+insert into echipe values(idseq.nextval, 1111, 1047, 1063,1079, 'Hornets', 1981);
+insert into echipe values(idseq.nextval, 1112, 1048, 1064,1080, 'Sharks', 2007);
+insert into echipe values(idseq.nextval, 1113, 1049, 1065,1081, 'Lions', 1993);
+insert into echipe values(idseq.nextval, 1114, 1050, 1066,1082, 'Knights', 1999);

@@ -1,0 +1,30 @@
+/*
+	PUNCTUL 14
+*/
+
+/*
+Sa se creeze o vizualizare ce permite doar citirea datelor si care contie numele jucatorilor, inaltimea, numarul de puncte marcate, numarul de faulturi, numaurl de pase decisive si numerul de recuperari.
+*/
+
+create or replace view statistici_jucatori as
+select j.nume || ' ' || j.prenume nume, j.inaltime, 
+    (select sum(3 * s.aruncari_3pct_marcate + 2 * s.aruncari_2pct_marcate + aruncari_libere_marcate)
+    from statistici s
+    where s.id_jucator = j.id_jucator) puncte, 
+    (select sum(s.faulturi) from statistici s where s.id_jucator = j.id_jucator) faulturi, 
+    (select sum(s.pase_decisive) from statistici s where s.id_jucator = j.id_jucator) pase, 
+    (select sum(s.recuperari) from statistici s where s.id_jucator = j.id_jucator) recuperari
+from jucatori j with read only;
+
+
+/* Operatie permisa: */
+
+select * 
+from statistici_jucatori  s
+where s.puncte = (select max(puncte) from statistici_jucatori);
+
+
+/* Operatie nepermisa: */
+
+update statistici_jucatori
+set faulturi = faulturi + 1;

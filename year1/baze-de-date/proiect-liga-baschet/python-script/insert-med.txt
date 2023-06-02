@@ -1,0 +1,5 @@
+insert into echipe_medicale values(idseq.nextval);
+insert into echipe_medicale values(idseq.nextval);
+insert into echipe_medicale values(idseq.nextval);
+insert into echipe_medicale values(idseq.nextval);
+insert into echipe_medicale values(idseq.nextval);

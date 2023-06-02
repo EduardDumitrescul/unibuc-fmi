@@ -1,0 +1,5 @@
+insert into arbitrii values(idseq.nextval, 'Ali', 'Oscar', to_date('01-02-1974', 'DD-MM-YYYY'));
+insert into arbitrii values(idseq.nextval, 'Nguyen', 'Maxwell', to_date('06-04-2000', 'DD-MM-YYYY'));
+insert into arbitrii values(idseq.nextval, 'Brown', 'Oscar', to_date('28-01-1974', 'DD-MM-YYYY'));
+insert into arbitrii values(idseq.nextval, 'Wilson', 'Miles', to_date('26-02-1989', 'DD-MM-YYYY'));
+insert into arbitrii values(idseq.nextval, 'Thomas', 'Ethan', to_date('14-10-1974', 'DD-MM-YYYY'));

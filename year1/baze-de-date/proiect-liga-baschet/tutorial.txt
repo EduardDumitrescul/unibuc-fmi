@@ -1,0 +1,4 @@
+https://oralytics.com/2021/10/01/oracle-21c-xe-database-and-docker-setup/
+
+username = system
+pswd = SysPassword1

@@ -1,0 +1,209 @@
+/* 
+	PUNCTUL 12
+*/
+
+
+/*
+1. Sa se afiseze numele, numarul de aruncari de 3 puncte marcate ale jucatorilor care au marcat mai multe aruncari de 3 puncte decat media echiper din care fac parte.
+- subcereri sincronizate în care intervin cel puțin 3 tabele
+*/
+ 
+select nume, (select sum(s.aruncari_3pct_marcate) 
+                        from statistici s
+                        where s.id_jucator = j.id_jucator) "Aruncari 3pct marcate",
+            (select avg(s2.aruncari_3pct_marcate)
+            from statistici s2, echipe e, jucatori j2
+            where e.id_echipa = j.id_echipa
+            and j2.id_echipa = e.id_echipa
+            and s2.id_jucator = j2.id_jucator
+            group by e.id_echipa) "AVG echipa"
+from jucatori j
+where (select sum(s.aruncari_3pct_marcate) 
+            from statistici s
+            where s.id_jucator = j.id_jucator)
+> (select avg(s2.aruncari_3pct_marcate)
+            from statistici s2, echipe e, jucatori j2
+            where e.id_echipa = j.id_echipa
+            and j2.id_echipa = e.id_echipa
+            and s2.id_jucator = j2.id_jucator
+            group by e.id_echipa);             
+            
+            
+            
+/*           
+2. Sa se afiseze numele antrenorilor, preparatorilor fizic si nutritionistilor care lucreaza pentru echipe cu numar par de victorii.
+- subcereri nesincronizate în clauza FROM
+- utilizarea a cel puțin 1 bloc de cerere(clauza WITH)
+*/
+
+with ids as (select a.id_angajat as ida, p.id_angajat as idp , n.id_angajat as idn
+            from (select count(e.id_echipa), e.id_echipa
+                        from echipe e, meciuri m
+                        where (e.id_echipa = m.id_echipa_gazda and m.scor_gazda > m.scor_oaspete)
+                        or  (e.id_echipa = m.id_echipa_oaspete and m.scor_gazda < m.scor_oaspete)
+                        having mod(count(e.id_echipa), 2) = 0
+                        group by e.id_echipa) aux
+                        join echipe e on e.id_echipa = aux.id_echipa
+                        join antrenori a on e.id_antrenor = a.id_angajat
+                        join preparatori_fizici p on e.id_preparator = p.id_angajat
+                        join nutritionisti n on e.id_nutritionist = n.id_angajat)
+select nume || ' ' || prenume
+from angajati a, ids
+where a.id_angajat = ids.ida
+or a.id_angajat = ids.idp
+or a.id_angajat = ids.idn;
+
+
+/*
+3. Sa se afiseze jucatorii cu ultima litera din nume diferita de ultima litera din prenume din echipele care au marcat in medie mai mult de 30 de puncte pe meci;
+- grupări de date cu  subcereri  nesincronizate  in  care  intervin  cel  putin  3  tabele, funcții grup, filtrare la nivel degrupuri(in cadrul aceleiasi cereri)
+- functie pe siruri de caractere (substr)
+*/
+
+
+select j2.nume, j2.prenume, j2.id_echipa
+from jucatori j2, (select avg(3 * s.aruncari_3pct_marcate + 2 * s.aruncari_2pct_marcate + s.aruncari_libere_marcate), e.id_echipa as ide
+                from statistici s, echipe e, jucatori j
+                where j.id_echipa = e.id_echipa
+                and s.id_jucator = j.id_jucator
+                group by e.id_echipa
+                having avg(3 * s.aruncari_3pct_marcate + 2 * s.aruncari_2pct_marcate + s.aruncari_libere_marcate) > 30) temp
+where j2.id_echipa = temp.ide
+and substr(j2.nume, -1, 1) <> substr(j2.prenume, -1, 1);
+
+
+/*
+4. Pentru fiecare echipa sa se afiseze numele si suma salariilor jucatorilor cu inaltime mai mica de 195cm si salariu mai mic de 45000. Sa se ordoneze descrescator in functie de suma.
+- ordonări si utilizarea funcțiilor NVL și DECODE (in cadrul aceleiasi cereri)
+*/
+
+select e.nume, temp.sum
+from echipe e, (select sum(decode(sign(45000 - j.salariu), 1, j.salariu, 0)) as sum, j.id_echipa
+                            from jucatori j
+                            where nvl(j.inaltime, 2) < 1.95
+                            group by j.id_echipa) temp
+where e.id_echipa = temp.id_echipa
+order by temp.sum desc;
+
+/*
+5. Pentru toti arbitrii care si-au obtinut licenta intr-o zi a lunii impara, sa se afiseze numele daca lungimea acestuia este para, altfel sa se afiseze prenumele. Sa se afiseze si luna otinerii licentei in format intreg.
+Sa se ordoneze crescator dupa lungimea numelui si a prenumelui concatenate.
+- functii pe date calendaristice (to_char, extract)
+- functii pe siruri de caractere (length)
+- eexpresie CASE
+*/
+
+select id_arbitru, 
+case mod(length(a.nume), 2) when 0 then a.nume when 1 then a.prenume end , 
+to_char (a.data_obtinere_licenta, 'Month')
+from arbitrii a
+where mod(extract(day from a.data_obtinere_licenta), 2) = 1
+order by length(a.nume || a.prenume);
+
+
+
+/*
+	PUNCTUL 13
+*/
+
+/*
+1. Sa se actualizeze salariu jucatorului Hernandez Sebastian cu valoarea medie a salariilor tuturor jucatorilor.
+*/
+
+update jucatori j
+set j.salariu = (select avg(j2.salariu) from jucatori j2)
+where lower(j.nume) = 'hernandez'
+and lower(j.prenume) = 'sebastian';
+
+/*
+2. Sa se stearga comentariile din meciurile in care echipa oaspete a castigat
+*/
+
+delete 
+from comentarii c
+where exists (select '*' from meciuri m
+where c.id_meci = m.id_meci and m.scor_oaspete > m.scor_gazda);
+
+/*
+3. Sa se actualizeze data obtinerii licentei a arbitrilor care si-au obtinut licenta inainte de 1980 cu valoare datei curente.
+*/
+
+update arbitrii a
+set a.data_obtinere_licenta = (select sysdate from dual) 
+where extract(year from a.data_obtinere_licenta) < 1980;
+
+
+
+
+/*
+	PUNCTUL 14
+*/
+
+/*
+Sa se creeze o vizualizare ce permite doar citirea datelor si care contie numele jucatorilor, inaltimea, numarul de puncte marcate, numarul de faulturi, numaurl de pase decisive si numerul de recuperari.
+*/
+
+create or replace view statistici_jucatori as
+select j.nume || ' ' || j.prenume nume, j.inaltime, 
+    (select sum(3 * s.aruncari_3pct_marcate + 2 * s.aruncari_2pct_marcate + aruncari_libere_marcate)
+    from statistici s
+    where s.id_jucator = j.id_jucator) puncte, 
+    (select sum(s.faulturi) from statistici s where s.id_jucator = j.id_jucator) faulturi, 
+    (select sum(s.pase_decisive) from statistici s where s.id_jucator = j.id_jucator) pase, 
+    (select sum(s.recuperari) from statistici s where s.id_jucator = j.id_jucator) recuperari
+from jucatori j with read only;
+
+
+/* Operatie permisa: */
+
+select * 
+from statistici_jucatori  s
+where s.puncte = (select max(puncte) from statistici_jucatori);
+
+
+/* Operatie nepermisa: 
+
+update statistici_jucatori
+set faulturi = faulturi + 1;
+
+*/
+
+
+/*
+	PUNCTUL 15
+*/
+
+/*
+1. Outer Join
+Sa se afiseze pentru fiecare jucator numele echipei, al antrenorului si toate premiile castigate.
+*/
+
+select e.nume echipa, a.nume || ' ' || a.prenume "Nume antrenor", j.nume || ' ' || j.prenume "Nume jucator",(select denumire from premii where d.id_premiu = id_premiu)
+from jucatori j
+full outer join distinctii d on d.id_jucator = j.id_jucator
+full outer join echipe e on e.id_echipa = j.id_echipa
+join angajati a on a.id_angajat = e.id_antrenor
+order by 1;
+            
+/*      
+2. Top-n
+Folosind vizualizarea STATISTICI_JUCATRORI, sa se afiseze cei 5 jucatori cu cele mai multe puncte marcate, precum si statisticile acestora.
+*/
+
+select * from statistici_jucatori
+where rownum <= 5
+order by puncte desc;
+
+/*
+3. Division
+    Sa se afiseze jucatorii impreuna cu premiile castigate, doar pentru jucatorii care au castigat toate premiile pe care le-a castigat jucatorul cu id-ul 1181.
+*/
+
+select j.id_jucator, j.nume, j.prenume, p.denumire
+from jucatori j
+join distinctii d on d.id_jucator = j.id_jucator
+join premii p on p.id_premiu = d.id_premiu
+where not exists (select '*' from distinctii d where d.id_jucator = 1181 and 
+                            not exists (select '*' from distinctii d2 where  d2.id_jucator = j.id_jucator and d2.id_premiu = d.id_premiu));
+
+

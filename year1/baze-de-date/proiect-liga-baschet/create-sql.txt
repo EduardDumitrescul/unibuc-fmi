@@ -1,0 +1,139 @@
+create table sezoane (
+id_sezon number(7) primary key,
+data_incepere date, 
+data_finalizare date
+);
+
+create table etape(
+id_etapa number(7) primary key, 
+id_sezon number(7) references sezoane(id_sezon),
+numar number(2)
+);
+
+create table angajati(
+id_angajat number(7) primary key , 
+nume varchar2(32),
+prenume varchar2(32),
+salariu number(7)
+);
+
+create table antrenori(
+id_angajat number(7) primary key references angajati(id_angajat)
+);
+
+create table preparatori_fizici(
+id_angajat number(7) primary key references angajati(id_angajat)
+);
+
+create table nutritionisti(
+id_angajat number(7) primary key references angajati(id_angajat)
+);
+
+create table locatii (
+id_locatie number(7) primary key, 
+tara varchar2(32),
+oras varchar2(32),
+strada varchar2(32),
+nr number(4)
+);
+
+create table arene (
+id_arena number(7) primary key,
+id_locatie number(7) references locatii(id_locatie),
+nume varchar2(32),
+locuri number(6)
+);
+
+create table echipe (
+id_echipa number(7) primary key, 
+id_arena number(7) references arene(id_arena),
+id_antrenor number(7) references antrenori(id_angajat),
+id_preparator number(7) references preparatori_fizici(id_angajat),
+id_nutritionist number(7) references nutritionisti(id_angajat), 
+nume varchar2(32), 
+an_infiintare number(4)
+);
+
+create table jucatori(
+id_jucator number(7) primary key, 
+id_echipa number(7) references echipe(id_echipa),
+nume varchar2(32),
+prenume varchar2(32),
+inaltime number(3, 2),
+salariu number(7)
+);
+
+create table echipe_medicale(
+id_echipa_medicala number(7) primary key
+);
+
+create table meciuri (
+id_meci number(7) primary key,
+id_etapa number(7) references etape(id_etapa),
+id_echipa_gazda number(7) references echipe(id_echipa),
+id_echipa_oaspete number(7) references echipe(id_echipa),
+id_echipa_medicala number(7) references echipe_medicale(id_echipa_medicala),
+scor_gazda number(3),
+scor_oaspete number(3)
+);
+
+create table arbitrii(
+id_arbitru number(7) primary key,
+nume varchar2(32),
+prenume varchar2(32),
+data_obtinere_licenta date
+);
+
+create table comentatori (
+id_comentator number(7) primary key,
+nume varchar2(32),
+prenume varchar2(32)
+);
+
+create table statistici(
+id_statistica number(7) primary key,
+id_meci number(7) references meciuri(id_meci),
+id_jucator number(7) references jucatori(id_jucator),
+minute_jucate number(2),
+aruncari_2pct number(2),
+aruncari_2pct_marcate number(2),
+aruncari_3pct number(2),
+aruncari_3pct_marcate number(2),
+aruncari_libere number(2),
+aruncari_libere_marcate number(2),
+pase_decisive number(2),
+recuperari number(2),
+faulturi number(2)
+);
+
+create table premii(
+id_premiu number(7) primary key,
+denumire varchar2(64)
+);
+
+create table participari (
+id_sezon number(7) references sezoane(id_sezon),
+id_echipa number(7) references echipe(id_echipa),
+constraint pk_participari primary key(id_sezon, id_echipa)
+);
+
+create table arbitraje(
+id_meci number(7) references meciuri(id_meci),
+id_arbitru number(7) references arbitrii(id_arbitru),
+constraint pk_arbitraje primary key(id_meci, id_arbitru)
+);
+
+create table comentarii(
+id_meci number(7) references meciuri(id_meci),
+id_comentator number(7) references comentatori(id_comentator),
+constraint pk_comentarii primary key(id_meci, id_comentator)
+);
+
+create table distinctii (
+id_sezon number(7) references sezoane(id_sezon),
+id_jucator number(7) references jucatori(id_jucator),
+id_premiu number(7) references premii(id_premiu),
+constraint pk_distinctii primary key(id_sezon, id_jucator, id_premiu)
+);
+
+savepoint after_create;
