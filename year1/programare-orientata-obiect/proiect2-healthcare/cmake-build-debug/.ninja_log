@@ -1,0 +1,15 @@
+# ninja log v5
+3	872	1682234207320809987	CMakeFiles/oop_healthcare.dir/treatment/SurgeryTreatment.cpp.o	ae73bbf5f8f5db86
+659	1208	1682234207657814588	CMakeFiles/oop_healthcare.dir/treatment/CrashTreatment.cpp.o	cbfa65339ae2c318
+1261	1364	1682234432509905737	oop_healthcare	584ee65446d4028a
+1	1260	1682234432406903856	CMakeFiles/oop_healthcare.dir/Demo.cpp.o	fa828763504c3ff9
+0	29	1682324076986709679	build.ninja	4e026360078c422a
+1	659	1682234207107807079	CMakeFiles/oop_healthcare.dir/people/Patient.cpp.o	bd5156d2099e550a
+3	821	1682234207269809291	CMakeFiles/oop_healthcare.dir/treatment/MedicationTreatment.cpp.o	356a8221fc4d5862
+3	792	1682234207239808881	CMakeFiles/oop_healthcare.dir/people/SurgeonDoctor.cpp.o	db208703ca4127cf
+813	1352	1682234207800816541	CMakeFiles/oop_healthcare.dir/GameScreen.cpp.o	f52f593e8b4d99a0
+1	1071	1682234207519812704	CMakeFiles/oop_healthcare.dir/main.cpp.o	807765fadbccb6e5
+2	895	1682234207343810301	CMakeFiles/oop_healthcare.dir/treatment/Treatment.cpp.o	5cb688ee49dcadb9
+2	812	1682234207260809168	CMakeFiles/oop_healthcare.dir/people/Doctor.cpp.o	ad9698d8fc60ff58
+2	813	1682234207260809168	CMakeFiles/oop_healthcare.dir/treatment/FirstAidTreatment.cpp.o	43d0494c1bc36365
+3	1224	1682234207672814793	CMakeFiles/oop_healthcare.dir/Database.cpp.o	b854d330ab8ef4e2

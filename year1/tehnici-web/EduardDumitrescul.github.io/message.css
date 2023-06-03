@@ -1,0 +1,19 @@
+label {
+    font-size: 2em;
+}
+input {
+    width: 40vw;
+    font-size: 1.8em;
+    margin-bottom: 3vh;
+}
+
+textarea {
+    width: 40vw;
+    height: 20vh;
+    font-size: 1.8em;
+    margin-bottom: 3vh;
+}
+button {
+    text-align: center;
+    font-size: 2em;
+}

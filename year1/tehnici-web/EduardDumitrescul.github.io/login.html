@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Logout Example</title>
+</head>
+<body>
+  
+  <div id="loginContainer">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+  
+  <div id="logoutContainer" style="display: none;">
+    <h2>Welcome, <span id="loggedInUser"></span>!</h2>
+    <button onclick="logout()">Logout</button>
+    <p id="logoutMessage"></p>
+  </div>
+  
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      fetch('/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.message === 'Login successful') {
+            document.getElementById('loginContainer').style.display = 'none';
+            document.getElementById('logoutContainer').style.display = 'block';
+            document.getElementById('loggedInUser').textContent = username;
+          } else {
+            document.getElementById('loginMessage').textContent = data.message;
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+    function logout() {
+      const username = document.getElementById('username').value;
+
+      fetch('/logout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.message === 'Logout successful') {
+            document.getElementById('loginContainer').style.display = 'block';
+            document.getElementById('logoutContainer').style.display = 'none';
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+    // Check if a user is logged in
+    function checkLoggedIn() {
+      const username = document.getElementById('username').value;
+
+      fetch(`/loggedin?username=${username}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.isLoggedIn) {
+            document.getElementById('loginContainer').style.display = 'none';
+            document.getElementById('logoutContainer').style.display = 'block';
+            document.getElementById('loggedInUser').textContent = username;
+          } else {
+            document.getElementById('loginContainer').style.display = 'block';
+            document.getElementById('logoutContainer').style.display = 'none';
+            document.getElementById('loggedInUser').textContent = '';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+    // Check logged-in status on page load
+    checkLoggedIn();
+  </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+/var/home/eduarddumitrescul/repos/nba-poo/cmake-build-debug/CMakeFiles/nba_poo.dir
+/var/home/eduarddumitrescul/repos/nba-poo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/var/home/eduarddumitrescul/repos/nba-poo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

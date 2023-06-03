@@ -1,0 +1,101 @@
+100
+Aplicație de management al bibliotecii
+Joc de șah
+Aplicație de notare a studenților
+Sistem de rezervare a camerelor de hotel
+Joc de Tetris
+Aplicație de gestionare a stocului într-un magazin
+Simulator de tranzacții bancare
+Joc de împușcare cu nave spațiale
+Aplicație de rezervare a biletelor de avion
+Aplicație de rezervare și gestionare a restaurantului
+Joc de cărți - Solitaire
+Aplicație de gestionare a angajaților
+Aplicație de gestionare a unei flote de mașini
+Joc de Scrabble
+Aplicație de gestionare a produselor într-un supermarket
+Joc de Căutare a Comoarelor
+Aplicație de creare a unui plan de învățare
+Joc de Bătălie Navală
+Aplicație de gestionare a proiectelor
+Joc de Puzzle - Sudoku
+Aplicație de monitorizare a sănătății
+Joc de Biliard
+Aplicație de gestiune a depozitului
+Joc de șah cu Inteligență Artificială
+Aplicație de gestionare a rețelelor sociale
+Joc de rol - Dungeons & Dragons
+Aplicație de planificare a evenimentelor
+Joc de Aventură Textuală
+Aplicație de monitorizare a progresului în activitățile fizice
+Joc de Minciuni și Adevăr
+Aplicație de gestionare a angajaților pentru o companie IT
+Joc de Cuvinte Încrucișate
+Aplicație de gestionare a bugetului personal
+Joc de Strategie - Settlers of Catan
+Aplicație de gestionare a unui club sportiv
+Joc de Strategie Militară
+Aplicație de gestionare a unei librării online
+Joc de Cucerire a Teritoriului
+Aplicație de gestionare a colecției de cărți
+Joc de Memorie
+Aplicație de gestionare a evenimentelor culturale
+Joc de Bătălie cu Monștri
+Aplicație de gestionare a cererilor de suport tehnic
+Joc de Căutare a Indiciilor
+Aplicație de gestionare a proiectelor de construcții
+Joc de Întrebări și Răspunsuri
+Aplicație de gestionare a medicamentelor și notificare a administrării
+Joc de Călătorie în Timp
+Aplicație de gestionare a meniurilor și rețetelor culinare
+Joc de Golf
+Aplicație de monitorizare a condițiilor meteo
+Joc de Tancuri
+Aplicație de gestionare a sarcinilor și a timpului
+Joc de Detectivi și Mister
+Aplicație de gestionare a rutelor de transport public
+Joc de Bătălie în Arena
+Aplicație de gestionare a rezervărilor pentru evenimente sportive
+Joc de Construcție a Oraselor
+Aplicație de gestionare a activităților de voluntariat
+Joc de Mahjong
+Aplicație de gestionare a activităților de mentorat
+Joc de Baschet
+Aplicație de gestionare a proiectelor educaționale
+Joc de Muzică - Pian sau Chitară
+Aplicație de monitorizare a consumului de calorii
+Joc de Curse de Mașini
+Aplicație de gestionare a proiectelor de cercetare științifică
+Joc de Bătălie cu Carti - Magic: The Gathering
+Aplicație de gestionare a evenimentelor de caritate
+Joc de Box
+Aplicație de gestionare a comenzilor pentru un restaurant online
+Joc de Patinaj Artistic
+Aplicație de monitorizare a progresului în învățare
+Joc de Cultivare a Grădinii
+Aplicație de gestionare a programărilor medicale
+Joc de Tenis
+Aplicație de monitorizare a cheltuielilor personale
+Joc de Vanatoare
+Aplicație de gestionare a unei biblioteci digitale
+Joc de Atletism
+Aplicație de gestionare a activităților de recrutare
+Joc de Bătălie Spatială
+Aplicație de monitorizare a somnului și a ritmurilor circadiene
+Joc de Dans
+Aplicație de gestionare a sarcinilor pentru un echipe de dezvoltare software
+Joc de Îngrijire a Animalelor de Companie
+Aplicație de gestionare a activităților de marketing
+Joc de Bătălie Navală cu Submarine
+Aplicație de monitorizare a consumului de apă
+Joc de Arcasi și Sageti
+Aplicație de gestionare a cererilor de permise de conducere
+Joc de Dezvoltare a Orașului
+Aplicație de gestionare a activităților de resurse umane
+Joc de Quiz Cultural
+Aplicație de monitorizare a calității aerului
+Joc de Fotbal
+Aplicație de gestionare a sarcinilor pentru un proiect de construcții
+Joc de Călătorie în Spațiu
+Aplicație de gestionare a activităților de e-commerce
+Joc de Bătălie Medievală

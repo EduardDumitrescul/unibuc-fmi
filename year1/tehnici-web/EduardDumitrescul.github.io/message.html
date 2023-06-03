@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leave a Message</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="message.css">
+    </head>
+
+    <body>
+        <section class="slide-fullpage theme-dark">
+            <form method="get" action="submit-message" target="iframe">
+                <label for="input-name">Name:</label> <br>
+                <input type="text" id="input-name" name="inputName"><br>
+                <label for="input-email">Email Address:</label><br>
+                <input type="email" id="input-email" name="inputEmail"><br>
+                <label for="input-message">Your Message:</label><br>
+                <textarea id="input-message" name="inputMessage"></textarea><br>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+
+            <iframe src="" height="200" width="500" name="iframe"></iframe> 
+        </section>
+
+        <script src="message.js"></script>
+    </body>
+</html>

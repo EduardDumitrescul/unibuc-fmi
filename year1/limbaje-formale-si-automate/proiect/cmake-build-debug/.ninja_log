@@ -1,0 +1,8 @@
+# ninja log v5
+1	1164	1682434421010183052	CMakeFiles/lfa_finite_auto.dir/LambdaNFA.cpp.o	d7418d9feb048eb2
+1	797	1683645171344116335	CMakeFiles/lfa_finite_auto.dir/main.cpp.o	b1de60dd00939d62
+1	351	1683645374984709406	CMakeFiles/lfa_finite_auto.dir/Grammar.cpp.o	fc0fc7d2450b2163
+1	930	1682324270293677104	CMakeFiles/lfa_finite_auto.dir/DFA.cpp.o	44ecaf1cac31f6a1
+1	1328	1682324270690685252	CMakeFiles/lfa_finite_auto.dir/NFA.cpp.o	429a75db2e12f2fc
+1	703	1682324353262379957	CMakeFiles/lfa_finite_auto.dir/Regex.cpp.o	15e26f39692efab0
+351	463	1683645375094706354	lfa_finite_auto	4b2162304461e074

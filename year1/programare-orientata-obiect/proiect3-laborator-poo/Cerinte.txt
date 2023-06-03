@@ -1,0 +1,7 @@
+ - clasa template: Grade, Database, Game, Project1, Project2, Project3
+ - metoda template: Database:39 editProject();
+                    Database:41 addProject()
+                    + citirile si afisarile
+ - exceptii: std::string - Game:298 (mai multe in Menu)
+            out_of_range - Menu:255
+            invalid_argument - Menu:275
