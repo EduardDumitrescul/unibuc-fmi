@@ -1,0 +1,642 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.11)  11 JAN 2024 12:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**proiect.tex
+(./proiect.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-01>
+(c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+\epsfxsize=\dimen143
+\epsfysize=\dimen144
+)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-11-09 v7.01f Hypertext links for LaTeX
+
+(c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-09 v2.55 Cross-referencing by name of section
+
+(c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count194
+)
+(c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count195
+)
+\@linkdim=\dimen145
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
+
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-11-09 v7.01f Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count198
+
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-11-09 v7.01f Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4171.
+Package hyperref Info: Link nesting OFF on input line 4176.
+Package hyperref Info: Hyper index ON on input line 4179.
+Package hyperref Info: Plain pages OFF on input line 4186.
+Package hyperref Info: Backreferencing OFF on input line 4191.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4438.
+\c@Hy@tempcnt=\count199
+
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4776.
+\XeTeXLinkMargin=\dimen146
+
+(c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count266
+\Field@Width=\dimen147
+\Fld@charsize=\dimen148
+Package hyperref Info: Hyper figures OFF on input line 6055.
+Package hyperref Info: Link nesting OFF on input line 6060.
+Package hyperref Info: Hyper index ON on input line 6063.
+Package hyperref Info: backreferencing OFF on input line 6070.
+Package hyperref Info: Link coloring OFF on input line 6075.
+Package hyperref Info: Link coloring with OCG OFF on input line 6080.
+Package hyperref Info: PDF/A mode OFF on input line 6085.
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-11-09 v7.01f Hyperref driver for pdfTeX
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
+
+(c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip50
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count272
+\mult@box=\box51
+\multicol@leftmargin=\dimen149
+\c@unbalance=\count273
+\c@collectmore=\count274
+\doublecol@number=\count275
+\multicoltolerance=\count276
+\multicolpretolerance=\count277
+\full@width=\dimen150
+\page@free=\dimen151
+\premulticols=\dimen152
+\postmulticols=\dimen153
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box52
+\last@line=\box53
+\mc@boxedresult=\box54
+\maxbalancingoverflow=\dimen154
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count278
+\c@columnbadness=\count279
+\c@finalcolumnbadness=\count280
+\last@try=\dimen155
+\multicolovershoot=\dimen156
+\multicolundershoot=\dimen157
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count281
+)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count282
+\lst@gtempboxa=\box97
+\lst@token=\toks18
+\lst@length=\count283
+\lst@currlwidth=\dimen158
+\lst@column=\count284
+\lst@pos=\count285
+\lst@lostspace=\dimen159
+\lst@width=\dimen160
+\lst@newlines=\count286
+\lst@lineno=\count287
+\lst@maxwidth=\dimen161
+
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count288
+\lst@skipnumbers=\count289
+\lst@framebox=\box98
+)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-11-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box99
+)
+(./proiect.aux)
+\openout1 = `proiect.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count291
+\scratchdimen=\dimen162
+\scratchbox=\box100
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen163
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks20
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 30.
+
+(./proiect.out) (./proiect.out)
+\@outlinefile=\write3
+\openout3 = `proiect.out'.
+
+\c@lstlisting=\count297
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+ [1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./proiect.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+ [2])
+\tf@toc=\write4
+\openout4 = `proiect.toc'.
+
+ [3] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 64.
+<./images/erd.png, id=266, 1708.3825pt x 773.89125pt>
+File: ./images/erd.png Graphic file (type png)
+<use ./images/erd.png>
+Package pdftex.def Info: ./images/erd.png  used on input line 73.
+(pdftex.def)             Requested size: 469.75499pt x 212.79123pt.
+ [5 <./images/erd.png>]
+<./images/diagrama-conceptuala.png, id=274, 1608.0075pt x 974.64125pt>
+File: ./images/diagrama-conceptuala.png Graphic file (type png)
+<use ./images/diagrama-conceptuala.png>
+Package pdftex.def Info: ./images/diagrama-conceptuala.png  used on input line 
+86.
+(pdftex.def)             Requested size: 469.75499pt x 284.72078pt.
+ [6 <./images/diagrama-conceptuala.png>] [7] [8]
+<./images/creation/angajati.png, id=438, 243.91125pt x 191.21437pt>
+File: ./images/creation/angajati.png Graphic file (type png)
+<use ./images/creation/angajati.png>
+Package pdftex.def Info: ./images/creation/angajati.png  used on input line 253
+.
+(pdftex.def)             Requested size: 109.93874pt x 86.18571pt.
+<./images/creation/antrenori.png, id=439, 371.88937pt x 162.6075pt>
+File: ./images/creation/antrenori.png Graphic file (type png)
+<use ./images/creation/antrenori.png>
+Package pdftex.def Info: ./images/creation/antrenori.png  used on input line 25
+5.
+(pdftex.def)             Requested size: 109.93874pt x 48.07051pt.
+<./images/creation/arbitraje.png, id=440, 329.73187pt x 186.6975pt>
+File: ./images/creation/arbitraje.png Graphic file (type png)
+<use ./images/creation/arbitraje.png>
+Package pdftex.def Info: ./images/creation/arbitraje.png  used on input line 25
+7.
+(pdftex.def)             Requested size: 109.93874pt x 62.24847pt.
+<./images/creation/arbitrii.png, id=441, 229.60782pt x 195.73125pt>
+File: ./images/creation/arbitrii.png Graphic file (type png)
+<use ./images/creation/arbitrii.png>
+Package pdftex.def Info: ./images/creation/arbitrii.png  used on input line 259
+.
+(pdftex.def)             Requested size: 109.93874pt x 93.71996pt.
+<./images/creation/arene.png, id=442, 298.11375pt x 197.23688pt>
+File: ./images/creation/arene.png Graphic file (type png)
+<use ./images/creation/arene.png>
+Package pdftex.def Info: ./images/creation/arene.png  used on input line 261.
+(pdftex.def)             Requested size: 109.93874pt x 72.73572pt.
+<./images/creation/comentarii.png, id=443, 373.395pt x 192.72pt>
+File: ./images/creation/comentarii.png Graphic file (type png)
+<use ./images/creation/comentarii.png>
+Package pdftex.def Info: ./images/creation/comentarii.png  used on input line 2
+63.
+(pdftex.def)             Requested size: 109.93874pt x 56.74016pt.
+<./images/creation/comentatori.png, id=444, 249.93375pt x 185.19188pt>
+File: ./images/creation/comentatori.png Graphic file (type png)
+<use ./images/creation/comentatori.png>
+Package pdftex.def Info: ./images/creation/comentatori.png  used on input line 
+265.
+(pdftex.def)             Requested size: 109.93874pt x 81.45923pt.
+<./images/creation/distinctii.png, id=445, 387.69844pt x 181.42781pt>
+File: ./images/creation/distinctii.png Graphic file (type png)
+<use ./images/creation/distinctii.png>
+Package pdftex.def Info: ./images/creation/distinctii.png  used on input line 2
+67.
+(pdftex.def)             Requested size: 109.93874pt x 51.44724pt.
+<./images/creation/echipe.png, id=446, 379.4175pt x 229.60782pt>
+File: ./images/creation/echipe.png Graphic file (type png)
+<use ./images/creation/echipe.png>
+Package pdftex.def Info: ./images/creation/echipe.png  used on input line 269.
+(pdftex.def)             Requested size: 109.93874pt x 66.5285pt.
+<./images/creation/echipe_medicale.png, id=447, 272.51813pt x 140.02313pt>
+File: ./images/creation/echipe_medicale.png Graphic file (type png)
+<use ./images/creation/echipe_medicale.png>
+Package pdftex.def Info: ./images/creation/echipe_medicale.png  used on input l
+ine 271.
+(pdftex.def)             Requested size: 109.93874pt x 56.48685pt.
+<./images/creation/etape.png, id=448, 303.38344pt x 182.18062pt>
+File: ./images/creation/etape.png Graphic file (type png)
+<use ./images/creation/etape.png>
+Package pdftex.def Info: ./images/creation/etape.png  used on input line 273.
+(pdftex.def)             Requested size: 109.93874pt x 66.01862pt.
+<./images/creation/jucatori.png, id=449, 303.38344pt x 212.29312pt>
+File: ./images/creation/jucatori.png Graphic file (type png)
+<use ./images/creation/jucatori.png>
+Package pdftex.def Info: ./images/creation/jucatori.png  used on input line 275
+.
+(pdftex.def)             Requested size: 109.93874pt x 76.9308pt.
+<./images/creation/locatii.png, id=450, 239.39438pt x 218.31563pt>
+File: ./images/creation/locatii.png Graphic file (type png)
+<use ./images/creation/locatii.png>
+Package pdftex.def Info: ./images/creation/locatii.png  used on input line 277.
+
+(pdftex.def)             Requested size: 109.93874pt x 100.25983pt.
+<./images/creation/meciuri.png, id=451, 432.11438pt x 226.59656pt>
+File: ./images/creation/meciuri.png Graphic file (type png)
+<use ./images/creation/meciuri.png>
+Package pdftex.def Info: ./images/creation/meciuri.png  used on input line 279.
+
+(pdftex.def)             Requested size: 109.93874pt x 57.64822pt.
+<./images/creation/nutritionisti.png, id=452, 373.395pt x 149.05687pt>
+File: ./images/creation/nutritionisti.png Graphic file (type png)
+<use ./images/creation/nutritionisti.png>
+Package pdftex.def Info: ./images/creation/nutritionisti.png  used on input lin
+e 281.
+(pdftex.def)             Requested size: 109.93874pt x 43.88496pt.
+<./images/creation/participari.png, id=453, 338.76563pt x 194.22563pt>
+File: ./images/creation/participari.png Graphic file (type png)
+<use ./images/creation/participari.png>
+Package pdftex.def Info: ./images/creation/participari.png  used on input line 
+283.
+(pdftex.def)             Requested size: 109.93874pt x 63.0307pt.
+<./images/creation/premii.png, id=454, 252.19218pt x 171.64125pt>
+File: ./images/creation/premii.png Graphic file (type png)
+<use ./images/creation/premii.png>
+Package pdftex.def Info: ./images/creation/premii.png  used on input line 285.
+(pdftex.def)             Requested size: 109.93874pt x 74.82309pt.
+<./images/creation/preparatori.png, id=455, 375.65344pt x 149.05687pt>
+File: ./images/creation/preparatori.png Graphic file (type png)
+<use ./images/creation/preparatori.png>
+Package pdftex.def Info: ./images/creation/preparatori.png  used on input line 
+287.
+(pdftex.def)             Requested size: 109.93874pt x 43.6234pt.
+<./images/creation/sequence.png, id=456, 227.34938pt x 173.14688pt>
+File: ./images/creation/sequence.png Graphic file (type png)
+<use ./images/creation/sequence.png>
+Package pdftex.def Info: ./images/creation/sequence.png  used on input line 289
+.
+(pdftex.def)             Requested size: 109.93874pt x 83.72778pt.
+<./images/creation/sezoane.png, id=457, 213.79875pt x 182.18062pt>
+File: ./images/creation/sezoane.png Graphic file (type png)
+<use ./images/creation/sezoane.png>
+Package pdftex.def Info: ./images/creation/sezoane.png  used on input line 291.
+
+(pdftex.def)             Requested size: 109.93874pt x 93.67812pt.
+<./images/creation/statistici.png, id=458, 306.39468pt x 347.79938pt>
+File: ./images/creation/statistici.png Graphic file (type png)
+<use ./images/creation/statistici.png>
+Package pdftex.def Info: ./images/creation/statistici.png  used on input line 2
+93.
+(pdftex.def)             Requested size: 109.93874pt x 124.79373pt.
+
+Overfull \hbox (21.68121pt too wide) in paragraph at lines 253--295
+[][]
+ []
+
+[9 <./images/creation/angajati.png> <./images/creation/antrenori.png> <./images
+/creation/arbitraje.png> <./images/creation/arbitrii.png> <./images/creation/ar
+ene.png> <./images/creation/comentarii.png> <./images/creation/comentatori.png>
+ <./images/creation/distinctii.png> <./images/creation/echipe.png> <./images/cr
+eation/echipe_medicale.png> <./images/creation/etape.png> <./images/creation/ju
+catori.png> <./images/creation/locatii.png> <./images/creation/meciuri.png> <./
+images/creation/nutritionisti.png> <./images/creation/participari.png> <./image
+s/creation/premii.png> <./images/creation/preparatori.png> <./images/creation/s
+equence.png> <./images/creation/sezoane.png> <./images/creation/statistici.png>
+]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
+53.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <7> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 353.
+ [10] [11] [12] [13]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 9
+37.
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 937.
+ [14]
+<./images/insert.png, id=1182, 520.94624pt x 645.16031pt>
+File: ./images/insert.png Graphic file (type png)
+<use ./images/insert.png>
+Package pdftex.def Info: ./images/insert.png  used on input line 987.
+(pdftex.def)             Requested size: 360.00055pt x 445.84035pt.
+ [15 <./images/insert.png>] [16]
+<./images/rez_colectii.png, id=1260, 572.89032pt x 701.62125pt>
+File: ./images/rez_colectii.png Graphic file (type png)
+<use ./images/rez_colectii.png>
+Package pdftex.def Info: ./images/rez_colectii.png  used on input line 1107.
+(pdftex.def)             Requested size: 320.00049pt x 391.90956pt.
+ [17] [18 <./images/rez_colectii.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1163.
+
+ [19]
+<./images/cursoare.png, id=1376, 606.01407pt x 715.92468pt>
+File: ./images/cursoare.png Graphic file (type png)
+<use ./images/cursoare.png>
+Package pdftex.def Info: ./images/cursoare.png  used on input line 1209.
+(pdftex.def)             Requested size: 300.00046pt x 354.41112pt.
+ [20 <./images/cursoare.png>] [21]
+<./images/rez_exceptii8.png, id=1468, 528.47438pt x 696.35156pt>
+File: ./images/rez_exceptii8.png Graphic file (type png)
+<use ./images/rez_exceptii8.png>
+Package pdftex.def Info: ./images/rez_exceptii8.png  used on input line 1302.
+(pdftex.def)             Requested size: 300.00046pt x 395.29881pt.
+ [22 <./images/rez_exceptii8.png>] [23]
+<./images/rez_exceptii9.png, id=1559, 535.2497pt x 695.59875pt>
+File: ./images/rez_exceptii9.png Graphic file (type png)
+<use ./images/rez_exceptii9.png>
+Package pdftex.def Info: ./images/rez_exceptii9.png  used on input line 1411.
+(pdftex.def)             Requested size: 400.00061pt x 519.85095pt.
+ [24] [25 <./images/rez_exceptii9.png>]
+<./images/trigger_lmd_comanda.png, id=1607, 568.37344pt x 698.61pt>
+File: ./images/trigger_lmd_comanda.png Graphic file (type png)
+<use ./images/trigger_lmd_comanda.png>
+Package pdftex.def Info: ./images/trigger_lmd_comanda.png  used on input line 1
+449.
+(pdftex.def)             Requested size: 400.00061pt x 491.67798pt.
+ [26] [27 <./images/trigger_lmd_comanda.png>]
+<./images/trigger_lmd_linie.png, id=1643, 567.62062pt x 541.27219pt>
+File: ./images/trigger_lmd_linie.png Graphic file (type png)
+<use ./images/trigger_lmd_linie.png>
+Package pdftex.def Info: ./images/trigger_lmd_linie.png  used on input line 150
+4.
+(pdftex.def)             Requested size: 400.00061pt x 381.44827pt.
+ [28] [29 <./images/trigger_lmd_linie.png>]
+<./images/trigger_ldd.png, id=1692, 565.36218pt x 600.74437pt>
+File: ./images/trigger_ldd.png Graphic file (type png)
+<use ./images/trigger_ldd.png>
+Package pdftex.def Info: ./images/trigger_ldd.png  used on input line 1550.
+(pdftex.def)             Requested size: 400.00061pt x 425.0465pt.
+ [30] [31 <./images/trigger_ldd.png>] [32] [33] [34] [35]
+[36] [37] [38] [39]
+<./images/pachet_executie.png, id=2805, 419.31656pt x 523.20468pt>
+File: ./images/pachet_executie.png Graphic file (type png)
+<use ./images/pachet_executie.png>
+Package pdftex.def Info: ./images/pachet_executie.png  used on input line 2617.
+
+(pdftex.def)             Requested size: 400.00061pt x 499.10135pt.
+ [40] [41 <./images/pachet_executie.png>] [42] [43]
+<./images/flux-actiuni.png, id=3037, 1197.72469pt x 691.08188pt>
+File: ./images/flux-actiuni.png Graphic file (type png)
+<use ./images/flux-actiuni.png>
+Package pdftex.def Info: ./images/flux-actiuni.png  used on input line 2905.
+(pdftex.def)             Requested size: 400.00061pt x 230.78888pt.
+ [44]
+[45 <./images/flux-actiuni.png>] (./proiect.aux)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-01>
+ ***********
+Package rerunfilecheck Info: File `proiect.out' has not changed.
+(rerunfilecheck)             Checksum: 2AC725651A0FD4D352AE97A61D72355E;6681.
+ ) 
+Here is how much of TeX's memory you used:
+ 13898 strings out of 474271
+ 218529 string characters out of 5751526
+ 2662533 words of memory out of 5000000
+ 33318 multiletter control sequences out of 15000+600000
+ 565439 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,6n,79p,732b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2023/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sf
+rm0700.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
+><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb>
+Output written on proiect.pdf (45 pages, 1266116 bytes).
+PDF statistics:
+ 3747 PDF objects out of 4296 (max. 8388607)
+ 3564 compressed objects within 36 object streams
+ 2679 named destinations out of 2984 (max. 500000)
+ 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+

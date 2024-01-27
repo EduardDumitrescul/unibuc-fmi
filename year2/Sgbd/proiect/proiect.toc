@@ -1,0 +1,47 @@
+\contentsline {section}{\numberline {1}Prezentare baza de date}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Descrierea Modelului}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Constrângeri}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Diagrama Entitate-Relație}{5}{section.2}%
+\contentsline {section}{\numberline {3}Diagrama Conceptuală}{6}{section.3}%
+\contentsline {section}{\numberline {4}Implementarea Bazei de Date}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Cod SQL}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Capturi de Ecran}{9}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Popularea Bazei de Date}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Cod Inserare}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Captură de Ecran}{15}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Problema - Colecții de Date}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Cerință}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Rezolvare}{16}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Captură de Ecran}{18}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Problemă - Cursoare}{19}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cerință}{19}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Rezolvare}{19}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Captura de Ecran}{20}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Problema - Excepții}{21}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Cerință}{21}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Rezolvare}{21}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Captură de Ecran}{22}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Problemă - Subprogram de Tip Procedura}{23}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Cerință}{23}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Rezolvare}{23}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Captură de Ecran}{25}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Problemă - Trigger LMD la nivel de comanda}{26}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Cerință}{26}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Rezolvare}{26}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Captură de Ecran}{27}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Problemă - Trigger LMD la nivel de linie}{28}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Cerință}{28}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Rezolvare}{28}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Captură de Ecran}{29}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Problema - Trigger LDD}{30}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Cerință}{30}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Rezolvare}{30}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Captură de Ecran}{31}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Opțional - Definire Pachet 1}{32}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Cod SQL}{32}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Exemplu Execuție}{40}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Captură de Ecran}{41}{subsection.13.3}%
+\contentsline {section}{\numberline {14}Opțional - Definire Pachet 2}{42}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Cerinta}{42}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Rezolvare}{42}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Captura de Ecran}{45}{subsection.14.3}%
