@@ -292,7 +292,13 @@ valueb (AndE e1 e2) memory = (valueb e1 memory) && (valueb e2 memory)
 -- valueb (LE (Nu 10) (Nu 15)) []
 
 bssos :: Stmt -> [(String, Int)] -> [(String, Int)]
-bssos = undefined
+bssos (AtrE s exp) memory = update s (value exp memory) memory
+bssos (Seq s1 s2) memory = bssos s2 (bssos s1 memory)
+bssos (IfE e s1 s2) memory = if valueb e memory == True then bssos s1 memory else bssos s2 memory
+bssos (WhileE exp s1) memory = if valueb exp memory == True 
+    then bssos (WhileE exp s1) (bssos s1 memory)
+    else memory
+bssos (Skip) memory = memory
 
 sssos1 :: (Stmt, [(String, Int)]) -> (Stmt, [(String, Int)])
 sssos1 = undefined
@@ -302,7 +308,7 @@ sssos1 = undefined
 sssos_star :: (Stmt, [(String, Int)]) -> [(Stmt, [(String, Int)])]
 sssos_star = undefined
 
-sssos_plus :: (Stmt, [(String, Int)]) -> [(Stmt, [(String, Int0.)])]
+sssos_plus :: (Stmt, [(String, Int)]) -> [(Stmt, [(String, Int)])]
 sssos_plus = undefined
 
 sssos_final_state :: (Stmt, [(String, Int)]) -> [(String, Int)]
