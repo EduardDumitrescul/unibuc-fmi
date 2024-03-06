@@ -1,0 +1,19 @@
+# Fdb version 4
+["pdflatex"] 1709725228 "/home/eduard/repos/unibuc-fmi/year2/alg-avans/tema1.tex" "tema1.pdf" "tema1" 1709725228 2
+  "/etc/texmf/web2c/texmf.cnf" 1709724433 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/eduard/repos/unibuc-fmi/year2/alg-avans/tema1.tex" 1709725228 146 c34824d59c5db5d21306557dfafda2f7 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1686341992 20144 fbcf51733730d8f1a62143512ff5b1fe ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1686341992 8448 74078c4a887f2cdcd57c3ec111622740 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1681935207 29940 9473d58112bc8a88f5505b823a053dde ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1693172360 40357 c95f5d5e031b5c7040b426833c11f2e0 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1693172360 40357 c95f5d5e031b5c7040b426833c11f2e0 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1709724448 6524267 e8d00114eed65d8f476a2af6c68b8609 ""
+  "tema1.aux" 1709725228 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "tema1.tex" 1709725228 146 c34824d59c5db5d21306557dfafda2f7 ""
+  (generated)
+  "tema1.aux"
+  "tema1.log"
+  "tema1.pdf"
+  (rewritten before read)
