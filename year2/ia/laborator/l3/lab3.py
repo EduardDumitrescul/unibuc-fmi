@@ -1,7 +1,7 @@
 
 from l3.NodArbore import NodArbore
 from l3.graf import Graf
-from l3.parcurgeri import aStarSolMultiple, aStarHeapQ, aStarPQ
+from l3.parcurgeri import aStarSolMultiple, aStarHeapQ, aStarPQ, a_star
 
 m = [
 [0, 3, 5, 10, 0, 0, 100],
@@ -24,3 +24,5 @@ nsol = 10
 aStarSolMultiple(graf, nsol=nsol) # nsol=10 timp = 0.0001499652862548828 secunde
 aStarHeapQ(graf, nsol=nsol) # nsol=10,      timp = 0.00009441375732421875 secunde
 aStarPQ(graf, nsol=nsol) # nsol = 10        timp = 0.00021266937255859375 secounde
+
+a_star(graf)
