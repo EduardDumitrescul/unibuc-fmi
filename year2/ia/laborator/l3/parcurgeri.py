@@ -1,8 +1,29 @@
 import heapq
+import queue
+from time import time
 
 
 def aStarPQ(graf, nsol):
     print("a-Star (pq)")
+    startTime = time()
+    pq = queue.PriorityQueue()
+    pq.put(graf.start)
+    while pq and nsol:
+        nodCurent = pq.get()
+        if graf.scop(nodCurent.informatie):
+            print(repr(nodCurent))
+            nsol -= 1
+            if nsol == 0:
+                break
+        succesori = graf.succesori(nodCurent)
+
+        for s in succesori:
+            pq.put(s)
+    print(f"Time to run: {time() - startTime}")
+
+def aStarHeapQ(graf, nsol):
+    startTime = time()
+    print("a-Star (heapq)")
     pq = []
     heapq.heappush(pq, graf.start)
     while pq and nsol:
@@ -11,12 +32,16 @@ def aStarPQ(graf, nsol):
             print(repr(nodCurent))
             nsol -= 1
             if nsol == 0:
-                return
+                break
         succesori = graf.succesori(nodCurent)
 
         for s in succesori:
             heapq.heappush(pq, s)
+
+    print(f"Time to run: {time() - startTime}")
 def aStarSolMultiple(graf, nsol):
+
+    startTime = time()
     print("a-Star")
     coada = [graf.start]
     while coada and nsol:
@@ -25,11 +50,13 @@ def aStarSolMultiple(graf, nsol):
             print(repr(nodCurent))
             nsol -= 1
             if nsol == 0:
-                return
+                break
         succesori = graf.succesori(nodCurent)
 
         coada += succesori
         coada.sort()
+
+    print(f"Time to run: {time() - startTime}")
 
 
 def breadthFirst(graf, nsol):
