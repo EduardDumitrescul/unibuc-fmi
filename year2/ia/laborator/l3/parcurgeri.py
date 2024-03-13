@@ -1,27 +1,37 @@
-from NodArbore import NodArbore
-from graf import Graf
-
-m = [
-    [0, 1, 0, 1, 1, 0, 0, 0, 0, 0],
-    [1, 0, 1, 0, 0, 1, 0, 0, 0, 0],
-    [0, 1, 0, 0, 0, 1, 0, 1, 0, 0],
-    [1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-    [0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-    [0, 0, 1, 0, 1, 0, 0, 0, 1, 1],
-    [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
-]
-
-start = 0
-scopuri = [5, 9]
-
-graf = Graf(m, NodArbore(start), scopuri)
+import heapq
 
 
-# Tema DFS, recursiv, coada
-# schimba bfs cu verificare scop la aduagrea in coada
+def aStarPQ(graf, nsol):
+    print("a-Star (pq)")
+    pq = []
+    heapq.heappush(pq, graf.start)
+    while pq and nsol:
+        nodCurent = heapq.heappop(pq)
+        if graf.scop(nodCurent.informatie):
+            print(repr(nodCurent))
+            nsol -= 1
+            if nsol == 0:
+                return
+        succesori = graf.succesori(nodCurent)
+
+        for s in succesori:
+            heapq.heappush(pq, s)
+def aStarSolMultiple(graf, nsol):
+    print("a-Star")
+    coada = [graf.start]
+    while coada and nsol:
+        nodCurent = coada.pop(0)
+        if graf.scop(nodCurent.informatie):
+            print(repr(nodCurent))
+            nsol -= 1
+            if nsol == 0:
+                return
+        succesori = graf.succesori(nodCurent)
+
+        coada += succesori
+        coada.sort()
+
+
 def breadthFirst(graf, nsol):
     print("BF")
     coada = [graf.start]
@@ -29,7 +39,7 @@ def breadthFirst(graf, nsol):
         nodCurent = coada.pop(0)
         # if graf.scop(nodCurent.informatie):
         #     print(repr(nodCurent))
-        #     nsol -= 1
+        #     nsol -= l1
         succesori = graf.succesori(nodCurent)
         for s in succesori:
             if graf.scop(s.informatie):
@@ -63,10 +73,3 @@ def depthFirstRec(graf, nsol, nod):
         if nsol == 0:
             return nsol
     return nsol
-
-
-depthFirst(graf, 10)
-breadthFirst(graf, 40)
-
-print("DF - rec")
-depthFirstRec(graf, 2, graf.start)

@@ -41,8 +41,8 @@ class NodArbore:
 
             mis_stanga = nod.informatie[0]
             can_stanga = nod.informatie[1]
-            mis_dreapta = graf.n - mis_stanga
-            can_dreapta = graf.n - can_stanga
+            mis_dreapta = graf.nm - mis_stanga
+            can_dreapta = graf.nc - can_stanga
             barca_stanga = ""
             barca_dreapta = ""
             if nod.informatie[2] == "left":
@@ -54,18 +54,19 @@ class NodArbore:
 
 
 class Graf:
-    def __init__(self, n, m, start):
-        self.n = n
+    def __init__(self, nm, nc, m, start):
+        self.nm = nm
+        self.nc = nc
         self.m = m
         self.start = start
 
     def scop(self, informatieNod):
-        return informatieNod == (0, 0, "right")
+        return informatieNod == (0, nc, "right") or informatieNod == (0, nc, "left")
 
     def succesori(self, nod):
         s = []
 
-        for (m, c, b) in [(m, c, b) for m in range(self.n+1) for c in range(self.n+1) for b in ["left", "right"]]:
+        for (m, c, b) in [(m, c, b) for m in range(self.nm+1) for c in range(self.nc+1) for b in ["left", "right"]]:
             if nod.inDrum((m, c, b)):
                 continue
             if b == nod.informatie[2]:
@@ -77,7 +78,7 @@ class Graf:
                 bmis = -bmis
                 bcan = -bcan
 
-            if bmis >= 0 and bcan >= 0 and (bmis + bcan > 0) and (bmis >= bcan or bmis == 0) and (m >= c or m == 0) and bmis + bcan <= self.m:
+            if bmis > 0 and 0 <= bcan <= bmis and ((m >= c or m == 0) or b == "right") and ((nm - m >= nc - c or nm - m == 0) or b == "left") and bmis + bcan <= self.m:
                 s.append(NodArbore((m, c, b), nod))
 
         return s
@@ -88,7 +89,7 @@ def breadthFirst(graf, nsol, fout):
         nodCurent = coada.pop(0)
         # if graf.scop(nodCurent.informatie):
         #     print(repr(nodCurent))
-        #     nsol -= 1
+        #     nsol -= l1
         succesori = graf.succesori(nodCurent)
         for s in succesori:
             if graf.scop(s.informatie):
@@ -123,20 +124,22 @@ def depthFirstRec(graf, nsol, nod, fout):
     return nsol
 
 
-n = 0
+nm = 0
+nc = 0
 m = 0
 
-with open("lab2.txt") as file:
-    n = int(file.readline())
+with open("tema.txt") as file:
+    nm = int(file.readline())
+    nc = int(file.readline())
     m = int(file.readline())
 
-graf = Graf(n, m, NodArbore((n, n, "left")))
+graf = Graf(nm, nc, m, NodArbore((nm, 0, "left")))
 # print(graf.succesori(graf.start))
 
 bf_out = open("bf.txt", "w")
 df_out = open("df.txt", "w")
 df_rec_out = open("df-rec.txt", "w")
 
-breadthFirst(graf, 1, bf_out)
-depthFirst(graf, 10, df_out)
-depthFirstRec(graf, 10, graf.start, df_rec_out)
+breadthFirst(graf, 3, bf_out)
+depthFirst(graf, 3, df_out)
+depthFirstRec(graf, 3, graf.start, df_rec_out)

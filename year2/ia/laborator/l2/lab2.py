@@ -88,7 +88,7 @@ def breadthFirst(graf, nsol, fout):
         nodCurent = coada.pop(0)
         # if graf.scop(nodCurent.informatie):
         #     print(repr(nodCurent))
-        #     nsol -= 1
+        #     nsol -= l1
         succesori = graf.succesori(nodCurent)
         for s in succesori:
             if graf.scop(s.informatie):
