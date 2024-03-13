@@ -13,6 +13,8 @@
   breaklines=true,
   postbreak=\mbox{\textcolor{blue}{$\hookrightarrow$}\space},
 }
+\usepackage{hyperref}
+\usepackage{graphicx}
 
 
 \begin{document}
@@ -126,10 +128,10 @@ $ALG_{2}(I) \geq 2 \cdot ALG_{1}(I)$ \hfill(0,5p)
 b) Nu există niciun input I pentru care
 $ALG_{1}(I) \geq 2 \cdot ALG_{2}(I)$ \hfill (0,5p)
 
-\subsubsection*{Rezolvare a)}
+\subsubsection*{Rezolvare: a)}
 Nu este adevarat. Daca pentru un anume I, amandoi algoritmii dau solutia optima, relatia nu este adevarata.
 
-\subsubsection*{Rezolvare b)}
+\subsubsection*{Rezolvare: b)}
 \begin{flushleft}
 Nu este adevarat.
 
@@ -142,7 +144,7 @@ $OPT \geq ALG_{2}$.
 Asadar, pentru $ALG_{2} = OPT$ si $ALG_{1}(I) = 2 \cdot OPT(I)$ inegalitatea are loc.
 \end{flushleft}
 
-\subsection{Load-Balancing 3}
+\subsection{Load-Balancing - 3}
 Fie algoritmul Ordered-Scheduling Algorithm (cursul 2, slide-ul 42),
 care implică algoritmul descris anterior (slide-ul 19) la care adăugăm
 o preprocesare cu care sortăm descrescător activitățile după timpul de
@@ -185,7 +187,96 @@ $ \leq OPT + \dfrac{1}{2} OPT  - \dfrac{1}{2m}= (\dfrac{3}{2} - \dfrac{1}{2m})OP
 
 \end{flushleft}
 
+\subsection{Traveling Salesman Problem - 2}
+Fie $P$ o mulțime de puncte în plan. Din cursurile anterioare știm să
+construim un Minimum Spanning Tree pe baza punctelor din $P$. Numim acest arbore $T$. Uneori, adăugând și alte puncte pe lângă cele din
+$P$, putem obține un MST cu cost mai mic. Un asemenea arbore, construit prin adăugarea de noduri se numește Steiner Tree. Algoritmii
+pentru calcularea de ST-uri sunt de obicei NP-hard.
 
+a) Arătați că există cazuri în care alegând un punct $q \notin P$ obținem un
+MST pentru mulțimea de puncte $P\cup\{q\}$ cu un cost mai mic decât
+$T$. \hfill (1p)
+
+b) Fie $Q$ o mulțime de puncte în plan, disjunctă față de $P$. Arătați că $T$
+este de cel mult două ori mai mare ca și cost față de MST-ul pentru
+$P \cup Q$. Altfel spus, odată ce avem un MST pentru $P$, putem îmbunătăți rezultatul adăugând alte puncte, dar niciodată cu mai mult de
+un factor de 2. \hfill (2p)
+
+\subsubsection*{Rezolvare: a)}
+\begin{flushleft}
+Fie $P=\{p_{1}=(0,0), p_{2}(0,2), p_{3}=(2,0), p_{4}=(2,2)\}$ si $q=(1,1)$.
+
+Costul lui $T$ este 
+\begin{center}
+$dist(p1, p2) + dist(p1, p3) + dist(p2,p4) = 2+2+2 = 6$ 
+\end{center}
+
+
+Costul arborelui partial de cost minim pe baza punctelor $P \cup \{q\}$ este
+\begin{center}
+$dist(p1,q) + dist(p2,q) + dist(p3,q) + dist(p4,q)=$
+
+$=\sqrt{2} + \sqrt{2} + \sqrt{2} + \sqrt{2}=$
+
+$=4 * sqrt{2} \approx 5.656$
+\end{center}
+
+Asadar, acesta este un caz in care alegând un punct $q \notin P$ obținem un
+MST pentru mulțimea de puncte $P\cup\{q\}$ cu un cost mai mic decât
+$T$.
+
+\end{flushleft}
+
+\subsubsection*{Rezolvare: b)}
+
+\begin{flushleft}
+\textbf{Idee:} Pornind de la MST-ul asociat punctelor $P \cup Q$ de cost $C$, construim un arbore partial asociat punctelor $P$ cu costul cel mult $2\cdot C$. Asadar, MST-ul asociat punctelor $P$ va avea cost cel mult dublu, ceea ce trebuie demonstrat.
+
+\textbf{Observatie 1:} Deoarece $P$ si $Q$ sunt multimi de puncte in plan, regula triunghiului este valabila.
+
+Fie $A$ MST-ul asociat punctelor $P \cup Q$, de cost $C$.
+
+Fie $B$ arborele partial asociat punctelor $P$ pe care urmeaza sa-l construim.
+
+\textbf{Observatie 2:} Nu are sens ca un punct $q \in Q$ sa fie frunza in $A$, deoarece, prin eliminarea lui, obtinem un nou MST, de cost mai mic, asociat punctelor $P \cup Q \setminus \{q\}$. Asadar, vom presupune, fara a pierde generalitatea, ca nu exista astfel de puncte.
+
+De asemenea, consideram cu $p \in P$ este radacina arborelui $A$.
+\vspace{16pt}
+
+Scriem \href{https://www.infoarena.ro/lowest-common-ancestor}{\underline{parcurgerea Euleriana}} a arborelui $A$.
+
+\includegraphics[scale=0.4]{graph.png}
+
+Pentru arborele din imagine, parcurgerea Euleriana este:
+
+P1, Q1, Q2, P2, Q2, P3, Q2, Q1, Q3, Q4, P4, Q4, Q3, P5, Q3, P6, Q3, Q1, P1, P7, P8, P7, P1
+
+Arborele nostru partial $B$ va fi construit in asa fel incat parcurgerea lui Euleriana sa fie identica cu cea a arborelui $A$, dupa ce eliminam punctele din $Q$.
+
+Pentru acest exemplu, parcurgerea Euleriana a arborelui $B$ va fi:
+P1 P2 P3 P4 P5 P6 P7 P8 P7 P1
+
+Pentru orice lant (cu eventualele renumerotari) $P1-Q1-Q2-...-Qn-P2$ avem:
+\begin{center}
+$dist(P1,P2) \leq dist(P1,Q1) + dist(Q1,Q2) + ... + dist(Qn-1, Qn) + dist(Qn, P2)$
+\end{center}
+
+Deci, suma distantelor $SB$ dintre toate perechile de puncte consecutive din parcurgerea Euleriana a lui $B$ este mai mica sau egala cu suma dinstantelor $SA$ dintre toate perechile de puncte consecutive din parcurgerea Euleriana a lui $A$.
+Cum $SA$ este egal cu lungimea conturului arborelui $A$, avem:
+\begin{center}
+$SB \leq SA = 2 \cdot C$
+\end{center}
+
+Construim graful $G$ in care exista muchie intre Px si Py, daca Px si Py se afla pe pozitii consecutive in parcurgerea Euleriana a lui B. Evident, obtinem chiar arborele $B$.
+
+\begin{center}
+$cost MST(B) \leq $ suma costurilor muchiilor lui B $= SB \leq 2 \cdot C$
+\end{center}
+
+Asadar, am demonstrat ca, prin adaugarea de noi puncte, putem imbunatati MST-ul lui $P$ cu un facor cel mult 2. 
+
+
+\end{flushleft}
 
 \end{document}
 
