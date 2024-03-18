@@ -118,6 +118,39 @@ def aStarSolMultiple(graf, nsol):
 
     print(f"Time to run: {time() - startTime}")
 
+def binarySearch(list, value):
+    if len(list) == 0:
+        return 0
+    left = 0
+    right = len(list) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if list[mid] < value:
+            left = mid + 1
+        else :
+            right = mid - 1
+    return right
+
+def aStarSolMultipleBSearch(graf, nsol):
+
+    startTime = time()
+    print("a-Star binary search")
+    coada = [graf.start]
+    while coada and nsol:
+        nodCurent = coada.pop(0)
+        if graf.scop(nodCurent.informatie):
+            print(repr(nodCurent))
+            nsol -= 1
+            if nsol == 0:
+                break
+        succesori = graf.succesori(nodCurent)
+
+        for s in succesori:
+            pos = binarySearch(coada, s)
+            coada.insert(pos, s)
+
+    print(f"Time to run: {time() - startTime}")
+
 
 def breadthFirst(graf, nsol):
     print("BF")
