@@ -1,0 +1,187 @@
+Part 1: Examine Local IP Addressing Information
+In this part, you will examine the IP addressing information in your home network.
+
+Step 1: What is my IPv4 address?
+
+c.     Repeat this step on your own device. What is the IPv4 address and default gateway for your device?
+- 192.168.1.128
+
+Step 2: What is the IPv4 address for my router?
+
+What is the IPv4 address for your router?
+ - 192.168.1.1
+
+Step 3: What is my public IPv4 address?
+
+
+d.     On your device, use one of the "what is my ip" websites you found in your search. List your public IPv4 address, location, and ISP.
+- ip: 188.26.8.50
+- locatie: Voluntari, IF RO
+- ISP: RCS & RDS Residential CGN
+ 
+
+Step 4: Examine the connections in your network.
+a.     What does the connection look like between your device and your router? Is it wired or wireless?
+- cablu
+
+b.     Where is the router that your device uses to access the internet?
+- pe raftul din spatele biroului
+c.     What does the connection look like between your router and the internet? Does it use a cable from the cable company or the phone company? Is it wireless? Can you find the cable as it leaves your house or see the remote tower if it is a wireless connection?
+- cablu coaxial care iese din casa
+
+e.     The second hop in your traceroute command on your device is typically your ISP's POP. What is the IP address for your ISP's POP?
+- 10.30.5.113
+
+ 
+
+Step 3: Attempt to discover the physical location of the IP address for your ISP POP.
+Who owns the POP for the second router in your traceroute output? You can search the internet for "ip lookup", which will result in a list of web sites that will give you information about an IP address.
+
+Fill in the table below with the information you discovered from your IP lookup research. You may need to visit several different lookup websites to get all the information.
+
+2nd Hop IPv4 address:
+10.30.5.113
+ 
+
+ISP: RCS & RDS
+
+City: Voluntari
+
+Region: Ilfov
+
+Country: Romania
+
+ 
+
+Step 5: Investigate the local ISP network.
+For the example of real traceroute output shown below, hops 2 through 9 all belong to Comcast. Recall that the real IPv4 addresses for these routers have been modified for this activity. Therefore, you cannot use them to do an IP lookup. However, you can look up the IP addresses for your own traceroute output to determine how many of hops belong to your ISP.
+
+C:\> tracert www.hawaii.edu
+
+ 
+
+Tracing route to web00.its.hawaii.edu [172.31.149.56]
+
+over a maximum of 30 hops:
+
+ 
+
+1 3 ms 4 ms 3 ms 10.0.0.1
+
+2 13 ms 16 ms 11 ms 10.120.89.61
+
+3 44 ms 18 ms 18 ms po-302-1222-rur02.monterey.ca.sfba.comcast.net [10.110.178.133]
+
+4 13 ms 14 ms 13 ms po-2-rur01.monterey.ca.sfba.comcast.net [10.139.198.129]
+
+5 21 ms 17 ms 15 ms be-222-rar01.santaclara.ca.sfba.comcast.net [10.151.78.177]
+
+6 16 ms 20 ms 19 ms be-39931-cs03.sunnyvale.ca.ibone.comcast.net [10.110.41.121]
+
+7 27 ms 14 ms 20 ms be-1312-cr12.sunnyvale.ca.ibone.comcast.net [10.110.46.30]
+
+8 24 ms 19 ms 23 ms be-303-cr01.9greatoaks.ca.ibone.comcast.net [10.110.37.178]
+
+9 19 ms 21 ms 17 ms be-2211-pe11.9greatoaks.ca.ibone.comcast.net [10.110.32.246]
+
+10 16 ms 23 ms 16 ms ae-3.2011.rtsw.sunn.net.internet2.edu [172.16.69.141]
+
+11 24 ms 24 ms 23 ms et-2-3-0.3457.rtsw.losa.net.internet2.edu [172.16.20.255]
+
+12 85 ms 87 ms 85 ms 172.16.47.134
+
+13 87 ms 85 ms 85 ms xe-1-1-0-54-kolanut-re0.uhnet.net [172.30.205.29]
+
+14 87 ms 86 ms 87 ms vl-669-10gigcolol3.uhnet.net [172.30.213.2]
+
+15 * * * Request timed out.
+
+16 * * * Request timed out.
+
+^C
+
+ 
+
+C:\>
+
+a.     In Packet Tracer, navigate to Monterey, and then click the monterey.ca building.
+
+b.     Notice that the two routers in the rack belong to comcast.net. You can hover your mouse over each router to see the IPv4 addresses. You can also click each router and investigate IPv4 addressing on the Config tab.
+
+c.     What is the IPv4 address of the 3rd hop in the Packet Tracer traceroute output?
+- 10.139.198.129
+
+d.     Which router and interface in the monterey.ca building is configured with this IPv4 address?
+- rur01_monterey...
+- GE 0/0
+
+e.     What is the IPv4 address of the 4th hop in the Packet Tracer traceroute output?
+- 10.151.78.177
+f.      Which router and interface in the monterey.ca building is configured with this IPv4 address?
+- rur01_monterey...
+-GE 1/0
+
+g.     Why do you think the IP addresses for the other interfaces are not shown in the traceroute output?
+- sunt afisate doar interfetele utilizate pentru aceasta comunicare
+
+h.     List the hops in your own traceroute output that belong to your local ISP.
+- 10.30.5.113, 10.220.196.58, 10.220.187.209
+
+
+d.     Click San Jose. Notice there are three buildings, each labeled with a part of the domain name discovered in the traceroute output. Routers with the same domain name are located in the same building. Investigate each building, router, and interface to complete the following table.
+
+- rar01.santaclara.ca.sfba.comcast.net, GE0/0, 10.151.78.177 (hop 5)
+- rar01.santaclara.ca.sfba.comcast.net, GE1/0, 10.110.41.122
+- cs03.sunnyvale.ca.ibone.comcast.net, GE 0/0, 10.110.41.121 (hop 6)
+- cr12.sunnyvale.ca.ibone.comcast.net, GE 0/0, 10.110.46.30 (hop 7)
+- cr12.sunnyvale.ca.ibone.comcast.net, GE 1/0, 10.110.37.177
+- cr01.9greatoaks.ca.ibone.comcast.net, GE 0/0, 10.110.37.178 (hop 8)
+- pe11.9greatoaks.ca.ibone.comcast.net, GE 0/0, 10.110.32.246 (hop 9)
+- pe11.9greatoaks.ca.ibone.comcast.net, GE 1/0, 172.16.69.142
+- rtsw.sunn.net.internet2.edu, GE 0/0, 172.16.69.141
+- rtsw.sunn.net.internet2.edu, GE 1/0, 172.16.20.254
+
+
+
+e.     What is the building, router, interface, and IPv4 address for the outbound link to Los Angeles?
+- greatoaks.calibone, rtsw.sunn.net.internet2.edu, GE 1/0, 172.16.20.254
+
+
+
+c.     In Packet Tracer, navigate to San Jose, if necessary, and then click the 9greatoaks.ca building. Notice the name of the third router in the rack indicates that it belongs to Internet2. This router is the 10th hop in the traceroute output.
+
+10 16 ms 23 ms 16 ms ae-3.2011.rtsw.sunn.net.internet2.edu [172.16.69.141]
+
+d.     What is the interface for the 10th hop?
+GE 0/0
+
+a.     In Packet Tracer, navigate to the Intercity level, and then click Los Angles.
+
+b.     The losa.net.internet2.edu building is located somewhere in Los Angeles County. Click the building to enter it.
+
+c.     The rack has one router, which is connect to the San Francisco Bay Area and a submarine cable that crosses the Pacific Ocean. What is the interface used for this 11th hop in the traceroute output?
+- GE 0/0
+
+a.     Search the internet for "submarine cable map" and see if you can locate any submarine cables that have a landing point both in Hermosa Beach and Hawaii. How many submarine cables terminate at Hermosa Beach?
+- 3
+
+b.     What is the name of the submarine cable that runs from Hermosa Beach to Hawaii?
+- SEA-US
+c.     What is the name of the landing point in Hawaii?
+- Makaha
+d.     How many submarine cables terminate at this landing point in Hawaii?
+- 3
+x
+
+i.      Click the i2px-Hawaii building. In the rack are two routers. The first one belongs to I2PX and represents the 12th hop in the traceroute output. What interface is assigned to the 12th hop?
+GE 0/0
+
+Step 11: Investigate the link between Internet2 and the University of Hawaii network.
+The next hop in our traceroute is:
+
+13 87 ms 85 ms 85 ms xe-1-1-0-54-kolanut-re0.uhnet.net [205.166.205.29]
+
+The domain name for this router indicates that it is part of the University of Hawaii network (uhnet.net). This router is located at the Honolulu Internet Exchange (HIX) in Honolulu, Hawaii, most likely located within the same IXP as the i2px.hawaii router.
+
+In Packet Tracer, notice that the second router in i2px-Hawaii rack is kolanut-re0.uhnet.net router. What interface is assigned to the 13th hop?
+- GE 0/0
