@@ -278,6 +278,102 @@ Asadar, am demonstrat ca, prin adaugarea de noi puncte, putem imbunatati MST-ul 
 
 \end{flushleft}
 
+\subsection{Vertex Cover \hfill (2p)}
+
+Fie $X = \{ x_{1}, x_{2}, ... , x_{n} \}$ o mulțime de variabile boolene. Numim formulă booleană (peste mulțimea X) în Conjunctive Normal Form (CNF) o
+expresie de forma $C1 \wedge C2 \wedge ... \wedge Cm$ unde fiecare predicat (clauză) $C_{i}$este o disjuncție a unui număr de variabile (este alcătuit din mai multe
+variabile cu simbolul $\vee$ - logical or - între ele).
+
+Exemplu de astfel de expresie:
+$(x1 \vee x3 \vee x4) \wedge (x2 \vee x3 \vee x7) \wedge (x1 \vee x5 \vee x6) \wedge (x2 \vee x5 \vee x7)$
+
+Evident că orice astfel de expresie va fi evaluată ca true dacă toate
+elementele lui $X$ iau valoarea true. Ne interesează în schimb să aflăm
+numărul minim de elemente din $X$ care trebuie să aibă valoarea true
+astfel încât toată expresia să fie true.
+Fie următorul algoritm pentru problema de mai sus în varianta în
+care fiecare clauză are exact trei variabile (numită $3CNF$):
+
+\subsubsection*{Greedy-3CNF}
+\begin{flushleft}
+
+
+1. Fie $C = \{ C_{1}, ... , C_{m} \}$ mulțimea de predicate, $X = \{ x_{1}, ... , x_{n} \}$
+mulțimea de variabile.
+
+
+2. Cât timp $C \neq \phi$ execută:\\
+(a) Alegem aleator $Cj \in C$.\\
+(b) Fie $x_{i}$ una dintre variabilele din $C_{j}$\\
+(c) $x_{i} \leftarrow true$\\
+(d) Eliminăm din C toate predicatele care îl conțin pe $x_{i}$\\
+
+
+3. Soluția constă din variabilele pe care le-am setat ca true pe parcursul execuției algoritmului
+
+
+\subsubsection*{Cerinte}
+a) Analizați factorul de aproximare (worst case) al algoritmului. \hfill (0,5p)
+
+b) Modificați algoritmul de mai sus, astfel încât acesta să fie un algoritm 3-aproximativ pentru problema inițială (și justificați). \hfill (0,5p)
+
+c) Reformulați problema de mai sus sub forma unei probleme de programare liniară (cu numere reale). \hfill (0,5p)
+
+d) Dați o soluție 3-aproximativă pentru problema de programare liniară formulată la subpunctul anterior. \hfill (0,5p)
+
+\subsubsection*{Rezolvare: a}
+Fie expresia:
+\begin{center}
+$(x_{1} \vee x_{2} \vee x_{3}) \wedge (x_{1} \vee x_{2} \vee x_{4}) \wedge .. \wedge (x_{1} \vee x_{2} \vee x_{n})$
+\end{center}
+Pe scurt, doua variabile apar in fiecare predicat, iar a treia variabila este diferita pentru fiecare predicat.
+
+Algoritmul Greedy-3CNF are sansa ca de fiecare data sa aleaga din fiecare predicat exact variabila care apare o singura data in toata formula. Astfel, solutia data de algoritm va fi $\{x_{3}, x_{4}, ..., x_{n}\}$, pe cand solutia optima este $\{x_{1}\}$. \\
+Asadar, algoritmul Greedy-3CNF ne poate oferi o solutie de (n-2) ori mai slaba decat cea optima.
+
+\subsubsection*{Rezolvare: b}
+Vom modifica pasul (b) astfel incat sa alegem toate cele 3 variable din predicatul $C_{j}$
+
+Vom spune ca doua predicate sunt complet distincte daca nu exista nicio variabila care sa apara in amandoua. Notam $C^{*}$ o multime in care toate predicatele sunt complet distincte doua cate doua.\\
+
+Aratam ca $OPT \geq |C^{*}|$:
+
+Fiecare variabila aleasa de solutia OPT poate face parte din cel mult un predicat din $C^{*}$, deci $OPT \geq |C^{*}|$.\\
+
+Aratam ca $ALG = 3 \cdot |C^{*}|$:
+
+Observam ca algoritmul nostru alege mereu un nou predicat $C_{j}$ complet distinct de cele alese pana atunci. Astfel, multimea acestor predicate poate fi notata  $C^{*}$, avand proprietatea ca oricare doua predicate din ea sunt complet distincte.
+Din faptul ca ALG, pentru fiecare predicat din $C^{*}$, alege cate 3 variabile, ajungem la concluzia ca $ALG = 3 \cdot |C^{*}|$
+
+Deci $3 \cdot OPT \geq 3 \cdot |C^{*}| = ALG$
+
+
+\subsubsection*{Rezolvare: c}
+Fie $X = \{x_{1}, x_{2}, ... ,x_{n}\},$ cu $0 \leq x_{i} \leq 1$.\\
+Vrem sa minimizam $S = x_{1} + x_{2} + ... + x_{n}$.\\
+Pentru fiecare $C_{i} = x_{m} \vee x_{n} \vee x_{p}$ avem constrangerea $x_{m} + x_{n} + x_{p} \geq 1$.
+
+\subsubsection*{Rezolvare: d}
+Folosindu-ne de problema de programare liniara de la punctul c, facem urmatoarea modificare. La final, daca $x_{i} \geq 1/3$, spunem ca variabila este adevarata, altfel este falsa.
+
+Astfel, S devine:
+
+\begin{center}
+
+\begin{equation}
+ S_{intreg} = \sum_{i=1}^{n} v_{i}, \text{ unde } v_{i} = 
+  \begin{cases}
+  1 & \text{ pentru } x_{i} \geq 1/3 \\
+  0 & \text{ altfel }
+  \end{cases}
+\end{equation}
+
+$S_{intreg} \leq \sum_{i=1}^{n} 3 \cdot v_{i} = 3 \cdot S_{real}$
+\end{center}
+
+Deci solutia este 3-aproximativa.
+
+\end{flushleft}
 \end{document}
 
 

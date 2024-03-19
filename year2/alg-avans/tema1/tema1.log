@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.3.6)  12 MAR 2024 19:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.3.16)  19 MAR 2024 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -490,27 +490,32 @@ File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
 lm-rmtt.enc}] [2{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
-<graph.png, id=82, 737.75626pt x 737.75626pt>
+<graph.png, id=86, 737.75626pt x 737.75626pt>
 File: graph.png Graphic file (type png)
 <use graph.png>
 Package pdftex.def Info: graph.png  used on input line 248.
 (pdftex.def)             Requested size: 295.09727pt x 295.09727pt.
- [3 <./graph.png>] (./tema1.aux)
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hfill' on input line 281.
+
+[3 <./graph.png>] [4] (./tema1.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
  ***********
 Package rerunfilecheck Info: File `tema1.out' has not changed.
-(rerunfilecheck)             Checksum: 30F30F4DAF9E56B1D0C00729548B2EFB;778.
+(rerunfilecheck)             Checksum: 9699B80C49BC5BE84719DAE589BFB44E;932.
  ) 
 Here is how much of TeX's memory you used:
- 11793 strings out of 477619
- 175797 string characters out of 5829987
+ 11807 strings out of 477619
+ 176024 string characters out of 5829986
  2089759 words of memory out of 5000000
- 32102 multiletter control sequences out of 15000+600000
+ 32107 multiletter control sequences out of 15000+600000
  550258 words of font info for 59 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 75i,8n,79p,456b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,456b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/p
@@ -520,10 +525,10 @@ e/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm
 onts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt10.pfb>
-Output written on tema1.pdf (3 pages, 260924 bytes).
+Output written on tema1.pdf (4 pages, 273542 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 54 words of extra memory for PDF output out of 10000 (max. 10000000)
 
