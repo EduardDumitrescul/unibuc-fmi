@@ -2,6 +2,40 @@ import heapq
 import queue
 from time import time
 
+from l4.NodArbore import NodArbore
+
+
+def aStarLab(gr, euristica):
+
+    OPEN = [gr.start]
+    CLOSED = []
+    while OPEN:
+        nodCurent = OPEN.pop(0)
+        CLOSED.append(nodCurent)
+        if gr.scop(nodCurent.informatie):
+            print(repr(nodCurent))
+            return
+        lSuccesori=gr.succesori(nodCurent, euristica)
+        for s in lSuccesori:
+            gasitOpen = False
+            for nodC in OPEN:
+                if s.informatie == nodC.informatie:
+                    gasitOpen = True
+                    if s < nodC:
+                        OPEN.remove(nodC)
+                    else:
+                        lSuccesori.remove(s)
+                    break
+            if not gasitOpen:
+                for nodC in CLOSED:
+                    if s.informatie == nodC.informatie:
+                        if s < nodC:
+                            CLOSED.remove(nodC)
+                        else:
+                            lSuccesori.remove(s)
+                        break
+        OPEN += lSuccesori
+        OPEN.sort()
 
 def a_star(graf):
     print("A-star (pseudocod)")
@@ -31,7 +65,7 @@ def a_star(graf):
 
 
                 if sOpen is not None:
-                    if sOpen >= s:
+                    if sOpen.f > s.f or (sOpen.f == s.f and sOpen.g < s.g):
                         open.remove(sOpen)
                         nod_nou = s
 
@@ -42,7 +76,7 @@ def a_star(graf):
                         break
 
                 if sClosed is not None:
-                    if sClosed >= s:
+                    if sClosed.f > s.f or (sClosed.f == s.f and sClosed.g < s.g):
                         closed.remove(sClosed)
                         nod_nou = s
                     else:
@@ -99,11 +133,11 @@ def aStarHeapQ(graf, nsol):
             heapq.heappush(pq, s)
 
     print(f"Time to run: {time() - startTime}")
-def aStarSolMultiple(graf, nsol):
+def aStarSolMultiple(graf, nsol, euristica):
 
     startTime = time()
     print("a-Star")
-    coada = [graf.start]
+    coada = [NodArbore(graf.start)]
     while coada and nsol:
         nodCurent = coada.pop(0)
         if graf.scop(nodCurent.informatie):
@@ -111,7 +145,7 @@ def aStarSolMultiple(graf, nsol):
             nsol -= 1
             if nsol == 0:
                 break
-        succesori = graf.succesori(nodCurent)
+        succesori = graf.succesori(nodCurent, euristica)
 
         coada += succesori
         coada.sort()
