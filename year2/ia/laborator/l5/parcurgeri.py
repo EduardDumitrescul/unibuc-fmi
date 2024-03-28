@@ -2,7 +2,7 @@ import heapq
 import queue
 from time import time
 
-from l4.NodArbore import NodArbore
+import NodArbore
 
 
 def aStarLab(gr, euristica):
@@ -36,6 +36,7 @@ def aStarLab(gr, euristica):
                         break
         OPEN += lSuccesori
         OPEN.sort()
+    print("Nu avem solutii")
 
 def a_star(graf):
     print("A-star (pseudocod)")

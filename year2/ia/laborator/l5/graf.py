@@ -11,6 +11,15 @@ class Graf:
     def scop(self, informatieNod):
         return informatieNod in self.scopuri
 
+    def valideaza(self):
+        matrDesfasurata = self.start[0] + self.start[1] + self.start[2]
+        nrInvers = 0
+        for i, placuta in enumerate(matrDesfasurata):
+            for placuta2 in matrDesfasurata[i + 1:]:
+                if placuta > placuta2 and placuta2:
+                    nrInvers += 1
+        return nrInvers % 2 == 0
+
     def estimeaza_h(self, infoNod, euristica):
         if infoNod in self.scopuri:
             return 0
@@ -24,24 +33,32 @@ class Graf:
                     for iBloc, bloc in enumerate(stiva):
                         try:
                             if infoNod[iStiva][iBloc] != bloc:
-                                h += 1
-                        except:
-                            h += 1
+                                h += 1  
                 minh = min(minh, h)
             return minh
 
-
     def succesori(self, nod, euristica):
-        s = []
-        for i, stiva in enumerate(nod.informatie):
-            if not stiva:
+        lSuccesori = []
+        gasitGol = False
+        for lGol in range(3):
+            for cGol in range(3):
+                if nod.informatie[lGol][cGol] == 0:
+                    gasitGol = True
+                    break
+            if gasitGol:
+                break
+
+        directii=[[-1, 0], [1, 0], [0, -1], [0, 1]]
+        for d in directii:
+            lPlacuta = lGol + d[0]
+            cPlactura = cGol + d[1]
+            if not (0 <= lPlacuta <= 2 and 0 <= cPlactura <= 2):
                 continue
-            copie_stive = copy.deepcopy(nod.informatie)
-            bloc = copie_stive[i].pop()
-            for j in range(len(nod.informatie)):
-                if j == i:
-                    continue
-                infoSuccesor = copy.deepcopy(copie_stive)
-                infoSuccesor[j].append(bloc)
-                s.append(NodArbore(infoSuccesor, nod.g+1, self.estimeaza_h(infoSuccesor, euristica), nod))
-        return s
+            infoSuccesor = copy.deepcopy(nod.informatie)
+            infoSuccesor[lGol][cGol], infoSuccesor[lPlacuta][cPlactura] = infoSuccesor[lPlacuta][cPlactura], infoSuccesor[lGol][cGol]
+
+            if not nod.inDrum(infoSuccesor):
+                lSuccesori.append(NodArbore(infoSuccesor, nod.g+1, self.estimeaza_h(infoSuccesor, euristica), nod))
+
+
+        return lSuccesori

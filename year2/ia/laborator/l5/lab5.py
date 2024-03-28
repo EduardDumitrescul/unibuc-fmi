@@ -1,19 +1,17 @@
-from l4 import NodArbore
-from l4.graf import Graf
-from l4.parcurgeri import aStarSolMultiple
+from l5.NodArbore import NodArbore
+from l5.graf import Graf
+from l5.parcurgeri import aStarLab
 
+with open("input.txt") as f:
+    linii = f.read().strip().split("\n")
+    start = [list(map(int, linie.strip().split())) for linie in linii]
+    scopuri = [
+        [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+    ]
 
-def calculeazaStiva(sir):
-    return [linie.strip().split() if linie != "#" else [] for linie in sir.strip().split('\n')]
+graf = Graf(NodArbore(start), scopuri)
+aStarLab(graf, "euristica mutari")
 
-
-
-with open("l4/input.txt") as f:
-    (sirStart, sirScopuri) = f.read().split("=========")
-    start = calculeazaStiva(sirStart)
-    scopuri = [calculeazaStiva(sir) for sir in sirScopuri.split("---")]
-
-graf = Graf(start, scopuri)
-aStarSolMultiple(graf, 4, "euristica mutari")
+# aStarSolMultiple(graf, 4, "euristica mutari")
 
 
