@@ -1,6 +1,7 @@
-package test.enums;
+package lab6.test.enums;
 
-import enums.Season;
+
+import lab6.enums.Season;
 
 public class TestSeason {
     public static void main(String[] args) {

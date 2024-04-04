@@ -1,6 +1,6 @@
-package test.enums;
+package lab6.test.enums;
 
-import enums.Anotimp;
+import lab6.enums.Anotimp;
 
 public class TestAnotimp {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class TestAnotimp {
         // folosirea enumerarilor in switch statement
         Anotimp anotimp = Anotimp.TOAMNA;
         switch (anotimp) {
-            case Anotimp.IARNA: // folosim IARNA si nu Anotimp.IARNA deoarece compilatorul stie deja ca singura posibila potrivire este valoarea IARNA a enumerarii
+            case IARNA: // folosim IARNA si nu Anotimp.IARNA deoarece compilatorul stie deja ca singura posibila potrivire este valoarea IARNA a enumerarii
                 System.out.println("Putem merge la ski!");
                 break;
             case TOAMNA:

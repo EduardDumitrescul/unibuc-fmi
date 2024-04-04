@@ -1,6 +1,6 @@
-package marker;
+package lab6.marker;
 
-public class Student {
+public class Student implements Cloneable{
     private String nume;
     private int varsta;
 

@@ -1,6 +1,7 @@
-package test.enums;
+package lab6.test.enums;
 
-import enums.DayTime;
+
+import lab6.enums.DayTime;
 
 public class TestDayTime {
     public static void main(String[] args) {

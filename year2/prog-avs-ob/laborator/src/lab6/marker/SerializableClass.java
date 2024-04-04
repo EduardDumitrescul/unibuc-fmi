@@ -1,4 +1,4 @@
-package marker;
+package lab6.marker;
 
 public class SerializableClass{
     String field1;

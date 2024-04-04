@@ -1,6 +1,6 @@
-package test.marker;
+package lab6.test.marker;
 
-import marker.Student;
+import lab6.marker.Student;
 
 public class TestStudent {
 

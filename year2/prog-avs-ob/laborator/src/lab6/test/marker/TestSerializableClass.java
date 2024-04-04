@@ -1,6 +1,6 @@
-package test.marker;
+package lab6.test.marker;
 
-import marker.SerializableClass;
+import lab6.marker.SerializableClass;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package enums;
+package lab6.enums;
 
 public enum DayTime {
     AM {
