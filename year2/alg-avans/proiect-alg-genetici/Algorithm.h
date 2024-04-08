@@ -1,0 +1,8 @@
+//
+// Created by eduard on 4/5/24.
+//
+
+#ifndef PROIECT_ALG_GENETICI_ALGORITHM_H
+#define PROIECT_ALG_GENETICI_ALGORITHM_H
+
+#endif //PROIECT_ALG_GENETICI_ALGORITHM_H
