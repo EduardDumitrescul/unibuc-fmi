@@ -1,0 +1,102 @@
+Part 1: Examine Network Requirements
+In this part, you will examine the network requirements to develop a VLSM address scheme for the network that is displayed in the topology diagram using the 192.168.33.128/25 network address.
+
+Step 1: Determine how many host addresses and subnets are available.
+Questions:
+How many host addresses are available in a /25 network?
+- 126
+What is the total number of host addresses needed in the topology diagram?
+- 80 (=40 + 2 + 25 + 5 + 4 + 4)
+How many subnets are needed in the network topology?
+- 6
+Step 2: Determine the largest subnet.
+Questions:
+What is the subnet description (e.g. BR1 LAN or BR1-BR2 link)?
+- BR1 LAN
+How many IP addresses are required in the largest subnet?
+- 40
+What subnet mask can support that many host addresses?
+- 255.255.255.192
+How many total host addresses can that subnet mask support?
+- 62
+Can you subnet the 192.168.33.128/25 network address to support this subnet?
+- da
+What are the network addresses that would result from this subnetting?
+- 192.168.33.128/26 si 192.168.33.192/26
+Use the first network address for this subnet.
+
+Step 3: Determine the second largest subnet.
+Questions:
+What is the subnet description?
+- BR2 LAN
+How many IP addresses are required for the second largest subnet?
+- 25
+What subnet mask can support that many host addresses?
+- 255.255.255.224
+How many total host addresses can that subnet mask support?
+- 30
+Can you subnet the remaining subnet again and still support this subnet?
+- da
+What are the network addresses that would result from this subnetting?
+- 192.168.33.192/27 si 192.168.33.224/27
+Use the first network address for this subnet.
+
+Step 4: Determine the third largest subnet.
+Questions:
+What is the subnet description?
+- BR2 IoT LAN
+How many IP addresses are required for the next largest subnet?
+- 5
+What subnet mask can support that many host addresses?
+- 255.255.255.248
+How many total host addresses can that subnet mask support?
+- 6
+Can you subnet the remaining subnet again and still support this subnet?
+- da
+What are the network addresses that would result from this subnetting?
+- 192.168.33.224/29, 192.168.33.232/29, 192.168.33.240/29, 192.168.33.248/29
+Use the first network address for this subnet.
+
+Use the second network address for the CCTV LAN.
+
+Use the third network address for the HVAC C2 LAN.
+
+Step 5: Determine the fourth largest subnet.
+Questions:
+What is the subnet description?
+- BR1-BR2 Link
+How many IP addresses are required for the next largest subnet?
+- 2
+What subnet mask can support that many host addresses?
+- 255.255.255.252
+How many total host addresses can that subnet mask support?
+- 2
+Can you subnet the remaining subnet again and still support this subnet?
+- da
+What are the network addresses that would result from this subnetting?
+- 192.168.33.248/30, 192.268.33.252/30
+Use the first network address for this subnet.
+
+Part 2: Design the VLSM Address Scheme
+In this part, you will document the VLSM addressing scheme.
+
+Step 1: Calculate the subnet information.
+Use the information that you obtained in Part 1 to fill in the following table.
+
+Subnet -Hosts - Network Adress - BroadCast Address
+BR1 LAN - 40 - 192.168.33.128/25 - 192.168.33.191/25
+BR2 LAN - 25 - 192.168.33.192/27 - 192.168.33.223/27
+BR2 IoT LAN - 5 - 192.168.33.224/29 - 192.168.33.231/29
+BR2 CCTV LAN - 4 - 192.168.33.232/29 - 192.168.33.239/29
+BR2 HVAC C2LAN - 4 - 192.168.33.240/29 - 192.168.33.247/29
+BR1-BR2 Link - 2 - 192.168.33.248/30 - 192.168.33.251/29
+
+
+Step 2: Complete the device interface address table.
+Assign the first host address in the subnet to the Ethernet interfaces. BR1 should be assigned the first host address in the BR1-BR2 Link.
+
+BR1 G0/0/0 - 192.168.33.249/30 
+BR1 G0/0/1 - 192.168.33.129/26
+BR2 G0/0/0 - 192.168.33.250/30
+BR2 G0/0/1 - 192.168.33.193/27
+
