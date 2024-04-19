@@ -19,7 +19,7 @@ public class Try {
             // handle exception
         }
 
-        // 3. try-finally
+        // 3. try-finallymyfile
         try {
             System.out.println("3. try block");
         } finally {
@@ -51,9 +51,8 @@ public class Try {
         } catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
             System.out.println("6. Missing or invalid input");
         }
-
         // 7. try-with-resources - inchide automat resursele (ce implementeaza AutoCloseable) dechise in clauza try
-        try (FileInputStream is = new FileInputStream("myfile.txt")) {
+        try (FileInputStream is = new FileInputStream("L7-input.txt")) {
             System.out.println("7.try block");
             // Read file data
         } catch (IOException e) {
