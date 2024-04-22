@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici/cmake-build-debug"
+			"value" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "27"
+			"value" : "28"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "8"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/274/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/274/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/274/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici"
+			"value" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/265/bin/ninja/linux/x64/ninja"
+			"value" : "/snap/clion/274/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27"
+			"value" : "/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1163,7 +1163,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici/cmake-build-debug"
+			"value" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici/cmake-build-debug"
 		},
 		{
 			"name" : "proiect_alg_genetici_IS_TOP_LEVEL",
@@ -1187,7 +1187,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici"
+			"value" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici"
 		}
 	],
 	"kind" : "cache",

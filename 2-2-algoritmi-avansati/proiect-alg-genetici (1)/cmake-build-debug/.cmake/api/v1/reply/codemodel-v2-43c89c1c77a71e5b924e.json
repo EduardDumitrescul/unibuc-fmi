@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici/cmake-build-debug",
-		"source" : "/home/eduard/repos/unibuc-fmi/year2/alg-avans/proiect-alg-genetici"
+		"build" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici/cmake-build-debug",
+		"source" : "/home/eduard/repos/unibuc-fmi/2-2-algoritmi-avansati/proiect-alg-genetici"
 	},
 	"version" : 
 	{
