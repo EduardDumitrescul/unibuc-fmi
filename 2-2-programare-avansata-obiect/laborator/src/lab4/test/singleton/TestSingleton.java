@@ -1,4 +1,4 @@
-package test.singleton;
+package lab4.test.singleton;
 
 import singleton.Singleton;
 
