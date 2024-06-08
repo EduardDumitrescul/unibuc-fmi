@@ -40,10 +40,7 @@ void solve() {
         return;
     }
     fout << "BOUNDED\n";
-
 }
-
-
 
 int main() {
     solve();
