@@ -37,14 +37,14 @@
 |Advanced Competencies in English 1|10||
 
 
-### Year 2 - Semeset 2
+### Year 2 - Semester 2
 |Course|Grade|Projects and Others|
 |---|---|---|
-|Advanced Algorithms||[Approximative Algorithms Problems](/2-2-algoritmi-avansati/tema1/Tema-AlgAvans-DumitresculEduardValentin-232.pdf)<br>[Genetic Algorithms Implementation](/2-2-algoritmi-avansati/proiect-alg-genetici/)|
-|Advanced Object-Oriented Programming||[Bookshop (javafx)](https://github.com/EduardDumitrescul/book-shop/tree/main)|
-|Computer Networks|||
-|Software Development Methods||[PixelPlay - Gaming Platform](https://github.com/skpha13/PixelPlay)|
-|Artificial Intelligence|||
-|Fundamentals of Programming Languages|||
-|Advanced Competencies in English 2|||
+|Advanced Algorithms|10|[Approximative Algorithms Problems](/2-2-algoritmi-avansati/tema1/Tema-AlgAvans-DumitresculEduardValentin-232.pdf)<br>[Genetic Algorithms Implementation](/2-2-algoritmi-avansati/proiect-alg-genetici/)|
+|Advanced Object-Oriented Programming|10|[Bookshop (javafx)](https://github.com/EduardDumitrescul/book-shop/tree/main)|
+|Computer Networks|10||
+|Software Development Methods|10|[PixelPlay - Gaming Platform](https://github.com/skpha13/PixelPlay)|
+|Artificial Intelligence|9|[Kaggle Image Classification](https://github.com/EduardDumitrescul/kaggle-image-classification)|
+|Fundamentals of Programming Languages|10||
+|Advanced Competencies in English 2|10||
 
