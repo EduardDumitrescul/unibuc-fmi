@@ -1,5 +1,6 @@
-# Bachelor's Degree in Computer Science (2022-2025)
-**University of Bucharest, Romania**
+# University of Bucharest
+## Bachelor's in Computer Science (2022-2025)
+## Master's in Natural Language Processing (2025, 2027)
 
 ### Year 1 - Semester 1
 
