@@ -3,12 +3,12 @@
 ## 1. Administrative Information
 
 ### Instructors
-* **Lectures:** Radu Ionescu (`raducu.ionescu@gmail.com`)
+* **Lectures:** Radu Ionescu 
 * **Labs:**
-    * Adriana Costache (`adriana16costache@gmail.com`)
-    * Silviu Gheorghe (`ghesil@gmail.com`)
-    * Mădălina Poșchină (`madalinaposchina@gmail.com`)
-    * Vlad Hondru (`vlad.hondru25@gmail.com`)
+    * Adriana Costache
+    * Silviu Gheorghe 
+    * Mădălina Poșchină 
+    * Vlad Hondru 
 
 ### Course Resources
 * **Website:** `https://practical-ml-fmi.github.io/ML/`

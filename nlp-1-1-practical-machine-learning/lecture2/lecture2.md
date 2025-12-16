@@ -1,7 +1,7 @@
 # Basic Concepts, Naïve Bayes, and Performance Metrics
 
 ## 1. Instructor Information
-* **Lecturer:** Radu Ionescu, Prof. PhD. (`raducu.ionescu@gmail.com`)
+* **Lecturer:** Radu Ionescu, Prof. PhD. 
 * **Institution:** Faculty of Mathematics and Computer Science, University of Bucharest
 
 ---
