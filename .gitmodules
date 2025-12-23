@@ -1,0 +1,6 @@
+[submodule "nlp-1-1-practical-machine-learning/noise-distribution-matching"]
+	path = nlp-1-1-practical-machine-learning/noise-distribution-matching
+	url = git@github.com:EduardDumitrescul/noise-distribution-matching.git
+[submodule "nlp-1-1-linguistics-for-computer-science/phonetic-phylogeny"]
+	path = nlp-1-1-linguistics-for-computer-science/phonetic-phylogeny
+	url = git@github.com:EduardDumitrescul/phonetic-phylogeny.git
