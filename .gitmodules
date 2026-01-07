@@ -4,3 +4,9 @@
 [submodule "nlp-1-1-linguistics-for-computer-science/phonetic-phylogeny"]
 	path = nlp-1-1-linguistics-for-computer-science/phonetic-phylogeny
 	url = git@github.com:EduardDumitrescul/phonetic-phylogeny.git
+[submodule "nlp-1-1-practical-machine-learning/unsupervised-activity-clustering"]
+	path = nlp-1-1-practical-machine-learning/unsupervised-activity-clustering
+	url = git@github.com:EduardDumitrescul/unsupervised-activity-clustering.git
+[submodule "unsupervised-activity-clustering"]
+	path = unsupervised-activity-clustering
+	url = git@github.com:EduardDumitrescul/unsupervised-activity-clustering.git
